@@ -1,0 +1,28 @@
+.card-experience {
+  margin-top: 50px;
+  display: flex;
+  height: 400px;
+  margin-bottom: 50px;
+  background-color: green;
+}
+
+.column1,
+.column2 {
+  width: 400px;
+}
+
+.card-subheader {
+  margin-left: 10px;
+}
+
+.column1 {
+  text-align: center;
+  background-color: red;
+  margin-left: auto;
+}
+
+.column2 {
+  text-align: left;
+  background-color: aqua;
+  margin-right: auto;
+}
