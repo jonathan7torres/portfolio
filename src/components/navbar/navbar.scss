@@ -1,5 +1,22 @@
 .navbar {
-  height: 50px;
+  height: 70px;
   display: flex;
   margin-bottom: 20px;
+  background-color: pink;
+}
+
+.logo {
+  width: 50px;
+  margin-left: 50px;
+}
+
+.navbar-links {
+  margin-right: 0;
+  margin-left: 50px;
+  background-color: green;
+}
+
+.link {
+  margin-left: 10px;
+  margin-right: 10px;
 }

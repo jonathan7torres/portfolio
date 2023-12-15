@@ -1,9 +1,11 @@
 .card-experience {
   margin-top: 50px;
   display: flex;
-  height: 400px;
+  height: 470px;
   margin-bottom: 50px;
-  background-color: green;
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .column1,
@@ -16,13 +18,18 @@
 }
 
 .column1 {
+  border-radius: 20px 0 0 20px;
   text-align: center;
-  background-color: red;
-  margin-left: auto;
+  background-color: lightcoral;
 }
 
 .column2 {
   text-align: left;
-  background-color: aqua;
-  margin-right: auto;
+  border-radius: 0 20px 20px 0;
+  background-color: white;
+}
+
+.card-list-item {
+  margin-bottom: 10px;
+  margin-right: 20px;
 }
