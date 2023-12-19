@@ -8,7 +8,7 @@ export default function Experience() {
     <section>
       <p className="title">Experience</p>
       {ExperienceJson.jobs.map((job) => (
-        <ExperienceCard props={job} />
+        <ExperienceCard props={job} key={job.id} />
       ))}
     </section>
   );

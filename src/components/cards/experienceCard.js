@@ -12,8 +12,10 @@ export default function ExperienceCard({ props }) {
       <div className="column2">
         <p className="card-subheader">Responsibilities:</p>
         <ul className="card-list">
-          {props.reponsibilites.map((response) => (
-            <li className="card-list-item">{response.reponsibility}</li>
+          {props.reponsibilites.map((responsibility) => (
+            <li key={responsibility.id} className="card-list-item">
+              {responsibility.reponsibility}
+            </li>
           ))}
         </ul>
       </div>

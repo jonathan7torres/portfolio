@@ -1,13 +1,74 @@
 {
   "about": [
     {
-      "title": "Education"
+      "id": 1,
+      "title": "Education",
+      "university": "Califronia State University, Fullerton",
+      "highest_level": "Bachelor's of Science",
+      "degree": "Computer Science",
+      "year_gradulated": "2020"
     },
     {
-      "title": "Skills"
+      "id": 2,
+      "title": "Skills",
+      "skills": [
+        {
+          "skill_id": 1,
+          "skills_title": "Techincal Skills",
+          "skills": [
+            {
+              "id": 1,
+              "skill_sub_title": "Programming Languages",
+              "description": "JavaScript, HTML, CSS, PHP, Python, C++"
+            },
+            {
+              "id": 2,
+              "skill_sub_title": "Tecnologies and Frameworkds",
+              "description": "Git, Postman, Jenkins, Datadog, Sentry, Laravel, React"
+            }
+          ]
+        },
+        {
+          "skill_id": 2,
+          "skills_title": "Soft Skills",
+          "skills": [
+            {
+              "id": 1,
+              "description": "Excellenet critical-thinking and problem-solving skills."
+            },
+            {
+              "id": 2,
+              "description": "Great written and verbal communication skills."
+            }
+          ]
+        }
+      ]
     },
     {
-      "title": "Hobbies"
+      "id": 3,
+      "title": "Hobbies",
+      "hobbies": [
+        {
+          "id": 1,
+          "hobby_name": "Cycling",
+          "year_started": "2020"
+        },
+        {
+          "id": 2,
+          "hobby_name": "Hiking",
+          "year_started": "2010"
+        },
+        {
+          "id": 3,
+          "hobby_name": "Listenting to Music",
+          "year_started": null
+        },
+        {
+          "id": 4,
+          "hobby_name": "Trying new Food",
+          "year_started": null
+        }
+      ]
     }
   ]
 }
