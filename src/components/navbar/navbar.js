@@ -8,7 +8,7 @@ export default function NavBar() {
   return (
     <header className="navbar">
       <div className="div-logo">
-        <NavLink to="/">
+        <NavLink to="/portfolio">
           <img src={logo} alt="logo" className="logo" />
         </NavLink>
       </div>
@@ -18,22 +18,22 @@ export default function NavBar() {
       </button>
       <nav className="navbar-links">
         <NavLink
-          to="/"
+          to="/portfolio"
           className={({ isActive }) => (isActive ? "link active" : "link")}
         >
           Home
-        </NavLink>
-        <NavLink
-          to="/about"
-          className={({ isActive }) => (isActive ? "link active" : "link")}
-        >
-          About
         </NavLink>
         <NavLink
           to="/experience"
           className={({ isActive }) => (isActive ? "link active" : "link")}
         >
           Experience
+        </NavLink>
+        <NavLink
+          to="/about"
+          className={({ isActive }) => (isActive ? "link active" : "link")}
+        >
+          About Me
         </NavLink>
       </nav>
     </header>

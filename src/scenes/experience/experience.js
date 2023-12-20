@@ -6,7 +6,7 @@ import "./experience.scss";
 export default function Experience() {
   return (
     <section>
-      <p className="title">Experience</p>
+      <p className="title">Previous Roles</p>
       {ExperienceJson.jobs.map((job) => (
         <ExperienceCard props={job} key={job.id} />
       ))}

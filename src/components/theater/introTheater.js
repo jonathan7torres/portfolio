@@ -3,21 +3,24 @@ import Typed from "typed.js";
 import "./introTheater.scss";
 
 export default function IntroTheater() {
-  // Create reference to store the DOM element containing the animation
   const el = useRef(null);
 
   useEffect(() => {
     const typed1 = new Typed(el.current, {
       strings: [
-        "Welcome!^5000",
-        "My name is Jonathan Torres<br>and I am a Software Engineer.",
+        "_^1000Welcome!^1000",
+        "_My name is Jonathan Torres<br> and I am a Software Engineer<br> from Los Angeles.^3000",
+        "_Scroll down to contact me!^2000",
       ],
       typeSpeed: 90,
       showCursor: false,
+      backSpeed: 100,
+      smartBackspace: true,
+      loop: true,
+      loopCount: 3,
     });
 
     return () => {
-      // Destroy Typed instance during cleanup to stop animation
       typed1.destroy();
     };
   }, []);
