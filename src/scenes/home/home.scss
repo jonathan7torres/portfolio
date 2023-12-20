@@ -1,4 +1,13 @@
 .intro {
+  height: 800px;
+  // background-color: aqua;
+  display: flex;
+}
+
+.name {
+  font-size: 60px;
+  margin: auto;
+  // background-color: antiquewhite;
+  width: 500px;
   text-align: center;
-  background-color: aqua;
 }

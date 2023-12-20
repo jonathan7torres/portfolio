@@ -6,4 +6,10 @@
 .link-linkedin,
 .link-github {
   text-decoration: none;
+  color: black;
+}
+
+.link-linkedin:hover,
+.link-github:hover {
+  text-decoration: underline;
 }

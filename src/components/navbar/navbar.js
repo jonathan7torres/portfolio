@@ -17,13 +17,22 @@ export default function NavBar() {
         <img src={hamburgerMenu} alt="burger" className="hamburger-menu" />
       </button>
       <nav className="navbar-links">
-        <NavLink to="/" className="link" activeClassName="active">
+        <NavLink
+          to="/"
+          className={({ isActive }) => (isActive ? "link active" : "link")}
+        >
           Home
         </NavLink>
-        <NavLink to="/about" className="link">
+        <NavLink
+          to="/about"
+          className={({ isActive }) => (isActive ? "link active" : "link")}
+        >
           About
         </NavLink>
-        <NavLink to="/experience" className="link">
+        <NavLink
+          to="/experience"
+          className={({ isActive }) => (isActive ? "link active" : "link")}
+        >
           Experience
         </NavLink>
       </nav>

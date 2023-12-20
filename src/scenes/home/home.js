@@ -1,14 +1,11 @@
 import React from "react";
 import "./home.scss";
+import IntroTheater from "../../components/theater/introTheater";
 
 export default function Home() {
   return (
-    <section>
-      <p className="intro">
-        Jonathan Torres
-        <br />
-        Software Engineer
-      </p>
+    <section className="intro">
+      <IntroTheater />
     </section>
   );
 }
