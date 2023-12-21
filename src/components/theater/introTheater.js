@@ -8,10 +8,12 @@ export default function IntroTheater() {
   useEffect(() => {
     const typed1 = new Typed(el.current, {
       strings: [
-        "_^1000Welcome!^1000",
-        "_My name is Jonathan Torres,<br> I am a Software Engineer<br> from Los Angeles, CA.^3000",
+        "_Hi there!^1000",
+        "_Hey!^1000",
+        "_Hello!^1000",
+        "_My name is Jonathan, I am a<br>Software Engineer/ Front-end Developer<br> from Los Angeles, CA.^3000",
         "_Scroll down to<br> connect with me!^2000",
-        "_My name is Jonathan Torres,<br> I am a Software Engineer<br> from Los Angeles, CA.^3000",
+        "_My name is Jonathan, I am a<br>Software Engineer/ Front-end Developer<br> from Los Angeles, CA.^3000",
       ],
       typeSpeed: 90,
       showCursor: false,

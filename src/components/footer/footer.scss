@@ -3,57 +3,44 @@
   height: 400px;
 }
 
-.table {
-  padding-top: 75px;
-  width: 500px;
+.profiles-row {
+  text-align: center;
+  margin-top: 50px;
   margin-left: auto;
   margin-right: auto;
-  display: flex;
+  margin-bottom: 70px;
 }
 
-.column {
-  width: 250px;
-}
-
-.column-title {
+.links-row {
   text-align: center;
-  padding-bottom: 25px;
+  height: 50px;
 }
 
-.column ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.list-item {
-  height: 30px;
-  margin: 20px;
-  padding: 0;
-  text-align: center;
-  text-decoration: none;
+.footer-image {
+  width: 25px;
 }
 
 .footer-link {
   text-decoration: none;
   color: black;
+  vertical-align: middle;
+  margin: 20px;
+}
+
+.footer-links-divder {
+  font-size: 30px;
+  vertical-align: middle;
 }
 
 .footer-link:hover {
   text-decoration: underline;
 }
 
-.image-linkedin,
-.image-github {
-  width: 20px;
-  margin-right: 10px;
-  vertical-align: middle;
-}
-
 .footer-logo {
+  display: flex;
+  vertical-align: middle;
   width: 30px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 50px;
-  display: flex;
 }
