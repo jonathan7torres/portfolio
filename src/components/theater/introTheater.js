@@ -9,13 +9,13 @@ export default function IntroTheater() {
     const typed1 = new Typed(el.current, {
       strings: [
         "_^1000Welcome!^1000",
-        "_My name is Jonathan Torres<br> and I am a Software Engineer<br> from Los Angeles, CA.^3000",
-        "_Scroll down to contact me!^2000",
-        "_My name is Jonathan Torres<br> and I am a Software Engineer<br> from Los Angeles, CA.^3000",
+        "_My name is Jonathan Torres,<br> I am a Software Engineer<br> from Los Angeles, CA.^3000",
+        "_Scroll down to<br> connect with me!^2000",
+        "_My name is Jonathan Torres,<br> I am a Software Engineer<br> from Los Angeles, CA.^3000",
       ],
       typeSpeed: 90,
       showCursor: false,
-      backSpeed: 100,
+      backSpeed: 50,
       smartBackspace: true,
       loop: true,
       loopCount: 3,

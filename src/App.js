@@ -7,10 +7,11 @@ import Footer from "./components/footer/footer";
 import "./app.scss";
 import usePageStore from "./stores/usePageStore";
 import { useEffect } from "react";
+import TechStack from "./scenes/techStack/techStack";
+import Updates from "./scenes/updates/updates";
 
 function App() {
   const { visitedPages, setAllPagesVisited } = usePageStore();
-  console.log(visitedPages);
 
   useEffect(() => {
     if (
@@ -31,11 +32,8 @@ function App() {
           path="/experience"
           element={<Experience pageName="experience" />}
         />
-        <Route
-          path="/tech-stack"
-          element={<Experience pageName="experience" />}
-        />
-        <Route path="/updates" element={<Experience pageName="experience" />} />
+        <Route path="/tech-stack" element={<TechStack />} />
+        <Route path="/updates" element={<Updates />} />
       </Routes>
       <Footer />
     </div>

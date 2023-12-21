@@ -12,8 +12,6 @@ export default function Home({ pageName }) {
 
   return (
     <section className="intro">
-      {allPagesVisited && <div>All pages have been visted!</div>}
-
       <IntroTheater />
     </section>
   );

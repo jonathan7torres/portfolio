@@ -11,8 +11,6 @@ export default function About({ pageName }) {
     addVisitedPage(pageName);
   }, [addVisitedPage, pageName]);
 
-  console.log(hobbies);
-
   return (
     <section>
       <h4>About Me</h4>
