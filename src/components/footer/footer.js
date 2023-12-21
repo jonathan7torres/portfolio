@@ -43,11 +43,11 @@ export default function Footer() {
           <ul>
             <li className="list-item">
               <NavLink to="/tech-stack" className="footer-link">
-                Tech Stack
+                Site Tech Stack
               </NavLink>
             </li>
             <li className="list-item">
-              <NavLink to="/tech-stack" className="footer-link">
+              <NavLink to="/updates" className="footer-link">
                 Site Updates
               </NavLink>
             </li>

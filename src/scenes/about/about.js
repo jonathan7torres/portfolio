@@ -1,14 +1,15 @@
 import React, { useEffect, useState } from "react";
 import about from "./about.json";
+import usePageStore from "../../stores/usePageStore";
 
-export default function About() {
-  // const [isLoading, setIsLoading] = useState(false);
+export default function About({ pageName }) {
   const [hobbies, setHobbies] = useState([]);
+  const { addVisitedPage } = usePageStore();
 
   useEffect(() => {
-    console.log("onMount");
     setHobbies(about.about[2]);
-  }, []);
+    addVisitedPage(pageName);
+  }, [addVisitedPage, pageName]);
 
   console.log(hobbies);
 
