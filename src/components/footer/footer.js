@@ -1,16 +1,27 @@
-import React from "react";
+import React, { useState } from "react";
 import linkedin from "../../assets/images/linkedIn.png";
 import github from "../../assets/images/github-mark.png";
 import gmail from "../../assets/images/gmail.png";
 import logo from "../../assets/images/JT.png";
 import resume from "../../assets/images/resume.png";
+import resumePdf from "../../assets/files/JonathanTorresResume.pdf";
 import "./footer.scss";
 import { NavLink } from "react-router-dom";
+import usePageStore from "../../stores/usePageStore";
 
 export default function Footer() {
+  const { allPagesVisited } = usePageStore();
+  const [isDownloadButtonShowing, setIsDownloadButtonShowing] = useState(false);
+
+  const onResumeClick = () => {
+    setIsDownloadButtonShowing(!isDownloadButtonShowing);
+  };
+
   return (
     <section className="footer">
       <hr />
+      {allPagesVisited && <span>TEST</span>}
+
       <section className="table">
         <div className="profiles-row">
           <a href="mailto:jon7torres@gmail.com" className="footer-link">
@@ -33,17 +44,39 @@ export default function Footer() {
             <img src={github} alt="github" className="footer-image" />
           </a>
           <span className="footer-link">
-            <img src={resume} alt="resume" className="footer-image" />
+            <input
+              type="image"
+              src={resume}
+              alt="resume"
+              className="footer-image"
+              onClick={onResumeClick}
+            />
           </span>
+          {isDownloadButtonShowing && (
+            <span className="button-resume-download">
+              <a
+                href={resumePdf}
+                download="JonathanTorresResume"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="download-link"
+              >
+                Download Resume
+              </a>
+            </span>
+          )}
         </div>
         <div className="links-row">
-          <NavLink to="/updates" className="footer-link">
-            Site Updates
-          </NavLink>
-          <span className="footer-links-divder">|</span>
-          <NavLink to="/tech-stack" className="footer-link">
-            Tech Stack
-          </NavLink>
+          <div className="column column1">
+            <NavLink to="/tech-stack" className="pages-link link-left">
+              Tech Stack
+            </NavLink>
+          </div>
+          <div className="column">
+            <NavLink to="/updates" className="pages-link link-right">
+              Site Updates
+            </NavLink>
+          </div>
         </div>
       </section>
       <div className="footer-div-logo">

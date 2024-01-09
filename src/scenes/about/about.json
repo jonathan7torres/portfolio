@@ -4,69 +4,104 @@
       "id": 1,
       "title": "Education",
       "university": "Califronia State University, Fullerton",
-      "highest_level": "Bachelor's of Science",
-      "degree": "Computer Science",
-      "year_gradulated": "2020"
+      "degree_level": "Bachelor's of Science",
+      "major": "Computer Science",
+      "year_started": "2014",
+      "year_graduated": "2020"
     },
     {
       "id": 2,
       "title": "Skills",
-      "skills": [
-        {
-          "skill_id": 1,
-          "skills_title": "Techincal Skills",
-          "skills": [
-            {
-              "id": 1,
-              "skill_sub_title": "Programming Languages",
-              "description": "JavaScript, HTML, CSS, PHP, Python, C++"
-            },
-            {
-              "id": 2,
-              "skill_sub_title": "Tecnologies and Frameworkds",
-              "description": "Git, Postman, Jenkins, Datadog, Sentry, Laravel, React"
-            }
-          ]
-        },
-        {
-          "skill_id": 2,
-          "skills_title": "Soft Skills",
-          "skills": [
-            {
-              "id": 1,
-              "description": "Excellenet critical-thinking and problem-solving skills."
-            },
-            {
-              "id": 2,
-              "description": "Great written and verbal communication skills."
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": 3,
-      "title": "Hobbies",
-      "hobbies": [
+      "sections_array": [
         {
           "id": 1,
-          "hobby_name": "Cycling",
-          "year_started": "2020"
+          "title": "Programming Languages",
+          "skills": [
+            {
+              "item_id": 1,
+              "item": "JavaScript"
+            },
+            {
+              "item_id": 2,
+              "item": "HTML"
+            },
+            {
+              "item_id": 3,
+              "item": "CSS"
+            },
+            {
+              "item_id": 4,
+              "item": "PHP"
+            },
+            {
+              "item_id": 5,
+              "item": "C++"
+            },
+            {
+              "item_id": 6,
+              "item": "Python"
+            }
+          ]
         },
         {
           "id": 2,
-          "hobby_name": "Hiking",
-          "year_started": "2010"
+          "title": "Technologies and Frameworks",
+          "skills": [
+            {
+              "item_id": 1,
+              "item": "Git"
+            },
+            {
+              "item_id": 2,
+              "item": "Postman"
+            },
+            {
+              "item_id": 3,
+              "item": "Jenkins"
+            },
+            {
+              "item_id": 4,
+              "item": "Datadog"
+            },
+            {
+              "item_id": 5,
+              "item": "Sentry"
+            },
+            {
+              "item_id": 6,
+              "item": "Laravel"
+            },
+            {
+              "item_id": 7,
+              "item": "React"
+            },
+            {
+              "item_id": 8,
+              "item": "Selenium"
+            },
+            {
+              "item_id": 9,
+              "item": "Excel"
+            },
+            {
+              "item_id": 10,
+              "item": "Microsoft Word"
+            }
+          ]
         },
         {
           "id": 3,
-          "hobby_name": "Listenting to Music",
-          "year_started": null
-        },
-        {
-          "id": 4,
-          "hobby_name": "Trying new Food",
-          "year_started": null
+          "title": "Other Skills",
+          "skills": [
+            {
+              "item_id": 1,
+              "item": "Excellenet critical-thinking and problem-solving skills"
+            },
+            {
+              "item_id": 2,
+              "item": "Great written and verbal communication skills"
+            }
+          ]
         }
       ]
     }

@@ -1,28 +1,24 @@
 import React, { useEffect, useState } from "react";
 import about from "./about.json";
 import usePageStore from "../../stores/usePageStore";
+import EducationCard from "../../components/cards/educationCard";
+import SkillsCard from "../../components/cards/skillsCard";
 
 export default function About({ pageName }) {
-  const [hobbies, setHobbies] = useState([]);
+  const [education, setEducation] = useState([]);
+  const [skills, setSkills] = useState([]);
   const { addVisitedPage } = usePageStore();
 
   useEffect(() => {
-    setHobbies(about.about[2]);
+    setEducation(about.about[0]);
+    setSkills(about.about[1]);
     addVisitedPage(pageName);
   }, [addVisitedPage, pageName]);
 
   return (
     <section>
-      <h4>About Me</h4>
-      <div>
-        <h5>Education</h5>
-      </div>
-      <div>
-        <h5>Skills</h5>
-      </div>
-      <div>
-        <h5>Hobbies</h5>
-      </div>
+      <EducationCard data={education} />
+      <SkillsCard data={skills} />
     </section>
   );
 }
