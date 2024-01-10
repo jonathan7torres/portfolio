@@ -7,10 +7,8 @@ import resume from "../../assets/images/resume.png";
 import resumePdf from "../../assets/files/JonathanTorresResume.pdf";
 import "./footer.scss";
 import { NavLink } from "react-router-dom";
-import usePageStore from "../../stores/usePageStore";
 
 export default function Footer() {
-  const { allPagesVisited } = usePageStore();
   const [isDownloadButtonShowing, setIsDownloadButtonShowing] = useState(false);
 
   const onResumeClick = () => {
@@ -20,9 +18,6 @@ export default function Footer() {
   return (
     <section className="footer">
       <hr />
-      {allPagesVisited && (
-        <span>Now that you've vistited all pages, Contact Me!!!</span>
-      )}
 
       <section className="table">
         <div className="profiles-row">

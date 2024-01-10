@@ -12,6 +12,9 @@ export default function Home({ pageName }) {
 
   return (
     <section className="intro">
+      {allPagesVisited && (
+        <span>Now that you've vistited all pages, Contact Me!!!</span>
+      )}
       <IntroTheater />
     </section>
   );
