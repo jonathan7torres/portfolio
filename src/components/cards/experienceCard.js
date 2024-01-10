@@ -10,14 +10,7 @@ export default function ExperienceCard({ props }) {
         <p className="card-period">{props.period}</p>
       </div>
       <div className="">
-        <p className="">Responsibilities:</p>
-        <ul className="card-list">
-          {props.reponsibilites.map((responsibility) => (
-            <li key={responsibility.id} className="card-list-item">
-              {responsibility.reponsibility}
-            </li>
-          ))}
-        </ul>
+        <p>{props.description}</p>
       </div>
     </div>
   );

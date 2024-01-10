@@ -1,16 +1,17 @@
 import React from "react";
 import "./style/aboutCard.scss";
+import "./style/educationCard.scss";
 
 export default function EducationCard({ data }) {
   return (
     <div className="aboutCard">
       <span>
         <h2>{data.title}</h2>
-        <hr />
       </span>
+      <hr />
       <p>
-        <span>{data.university}</span>
-        <span>
+        <span className="university">{data.university}</span>
+        <span className="years">
           {data.year_started} - {data.year_graduated}
         </span>
       </p>

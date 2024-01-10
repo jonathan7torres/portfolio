@@ -13,8 +13,8 @@ export default function SkillsCard({ data }) {
     <div className="aboutCard">
       <span>
         <h2>{data.title}</h2>
-        <hr />
       </span>
+      <hr />
       {data.sections_array?.map((section) => (
         <div key={section.id}>
           <span className="skills-subtitle">{section.title}</span>
@@ -22,7 +22,7 @@ export default function SkillsCard({ data }) {
             {section.skills.map((skills) => (
               <li
                 className="list-item"
-                style={{ "background-color": getColor(), color: "white" }}
+                style={{ backgroundColor: getColor(), color: "white" }}
                 key={skills.item_id}
               >
                 {skills.item}

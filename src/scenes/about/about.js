@@ -3,6 +3,7 @@ import about from "./about.json";
 import usePageStore from "../../stores/usePageStore";
 import EducationCard from "../../components/cards/educationCard";
 import SkillsCard from "../../components/cards/skillsCard";
+import "../style/screensStyle.scss";
 
 export default function About({ pageName }) {
   const [education, setEducation] = useState([]);
@@ -17,7 +18,7 @@ export default function About({ pageName }) {
 
   return (
     <section>
-      <h1>About</h1>
+      <h1 className="screen-title">About</h1>
       <EducationCard data={education} />
       <SkillsCard data={skills} />
     </section>

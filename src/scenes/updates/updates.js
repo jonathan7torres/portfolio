@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import "./updates.scss";
+import "../style/screensStyle.scss";
 import usePageStore from "../../stores/usePageStore";
 
 export default function Updates({ pageName }) {
@@ -11,8 +12,8 @@ export default function Updates({ pageName }) {
 
   return (
     <section className="section-updates">
+      <h1 className="screen-title">Updates</h1>
       <div className="updates-container">
-        <h3 className="title">Updates</h3>
         <ul className="updates-list">
           <li>12/20/2023: Added Tech Stack and updates pages</li>
         </ul>

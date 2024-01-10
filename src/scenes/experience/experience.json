@@ -5,56 +5,14 @@
       "company": "Upwards (formerly WeeCare)",
       "title": "Junior Software Engineer",
       "period": "Decemeber 2020 - November 2023",
-      "reponsibilites": [
-        {
-          "id": 1,
-          "reponsibility": "Delivered high-quality solutions for evolving backend services, assisting the development of service-oriented architectures."
-        },
-        {
-          "id": 2,
-          "reponsibility": "Assisted in and took ownership of front end updates, encompassing code migrations, code improvements, bug fixes, and user acceptance testing (UAT)."
-        },
-        {
-          "id": 3,
-          "reponsibility": "Contributed to the implementation of comprehensive unit and integration tests for API services, actively participated in rigorous acceptance testing for user-facing features."
-        },
-        {
-          "id": 4,
-          "reponsibility": "Spearheaded the development and maintenance of over 40 web scraping scripts, resulting in the acquisition of 150,000+ potential leads."
-        },
-        {
-          "id": 5,
-          "reponsibility": "Collaborated with cross-functional teams and stakeholders to design and implement new features, ensuring a seamless integration with existing services."
-        },
-        {
-          "id": 6,
-          "reponsibility": "Created and maintained comprehensive documentation on engineering practices for effective knowledge transfer within the company."
-        }
-      ]
+      "description": "Description 1"
     },
     {
       "id": 2,
       "company": "Data One POS, Inc.",
       "title": "Technical Intern",
       "period": "June 2019 - September 2019",
-      "reponsibilites": [
-        {
-          "id": 1,
-          "reponsibility": "Served as a peer facilitator for group of three interns, explained company protocols and guidelines."
-        },
-        {
-          "id": 2,
-          "reponsibility": "Installed and maintained hardware components of Point of Sale systems and credit card terminals."
-        },
-        {
-          "id": 3,
-          "reponsibility": "Collaborated in a team to analyze and troubleshoot issues with products."
-        },
-        {
-          "id": 4,
-          "reponsibility": "Delivered customer service by discussing concerns and possible solutions."
-        }
-      ]
+      "description": "Description 2"
     }
   ]
 }

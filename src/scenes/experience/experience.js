@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import ExperienceJson from "./experience.json";
 import ExperienceCard from "../../components/cards/experienceCard";
 import "./experience.scss";
+import "../style/screensStyle.scss";
 import usePageStore from "../../stores/usePageStore";
 
 export default function Experience({ pageName }) {
@@ -13,7 +14,7 @@ export default function Experience({ pageName }) {
 
   return (
     <section>
-      <p className="title">Previous Roles</p>
+      <h1 className="screen-title">Experience</h1>
       {ExperienceJson.jobs.map((job) => (
         <ExperienceCard props={job} key={job.id} />
       ))}
