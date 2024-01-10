@@ -15,8 +15,14 @@ function App() {
 
   useEffect(() => {
     if (
-      visitedPages.length >= 3 &&
-      visitedPages.includes("home", "experience", "about")
+      visitedPages.length >= 5 &&
+      visitedPages.includes(
+        "home",
+        "experience",
+        "about",
+        "tectStack",
+        "updates"
+      )
     ) {
       setAllPagesVisited();
     }
@@ -32,8 +38,11 @@ function App() {
           path="/experience"
           element={<Experience pageName="experience" />}
         />
-        <Route path="/tech-stack" element={<TechStack />} />
-        <Route path="/updates" element={<Updates />} />
+        <Route
+          path="/tech-stack"
+          element={<TechStack pageName="tectStack" />}
+        />
+        <Route path="/updates" element={<Updates pageName="updates" />} />
       </Routes>
       <Footer />
     </div>

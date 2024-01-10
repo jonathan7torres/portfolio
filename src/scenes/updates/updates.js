@@ -1,7 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./updates.scss";
+import usePageStore from "../../stores/usePageStore";
 
-export default function Updates() {
+export default function Updates({ pageName }) {
+  const { addVisitedPage } = usePageStore();
+
+  useEffect(() => {
+    addVisitedPage(pageName);
+  }, [addVisitedPage, pageName]);
+
   return (
     <section className="section-updates">
       <div className="updates-container">

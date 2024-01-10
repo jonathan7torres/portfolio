@@ -5,10 +5,14 @@ export default function EducationCard({ data }) {
   return (
     <div className="aboutCard">
       <span>
-        <b>{data.title}</b>
+        <h2>{data.title}</h2>
+        <hr />
       </span>
       <p>
-        {data.university} {data.year_started} - {data.year_graduated}
+        <span>{data.university}</span>
+        <span>
+          {data.year_started} - {data.year_graduated}
+        </span>
       </p>
       <p>
         {data.degree_level}, {data.major}

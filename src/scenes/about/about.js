@@ -17,6 +17,7 @@ export default function About({ pageName }) {
 
   return (
     <section>
+      <h1>About</h1>
       <EducationCard data={education} />
       <SkillsCard data={skills} />
     </section>

@@ -20,7 +20,9 @@ export default function Footer() {
   return (
     <section className="footer">
       <hr />
-      {allPagesVisited && <span>TEST</span>}
+      {allPagesVisited && (
+        <span>Now that you've vistited all pages, Contact Me!!!</span>
+      )}
 
       <section className="table">
         <div className="profiles-row">

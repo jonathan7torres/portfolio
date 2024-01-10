@@ -2,24 +2,24 @@ import React from "react";
 import "./style/skillsCard.scss";
 
 export default function SkillsCard({ data }) {
-  const colors = ["#EFC7B7", "#BAB2B5", "#EEE2DC", "#123C69", "#AC3B61"];
+  const colors = ["#ff8533", "#ff5050", "#668cff", "#40bf80", "#dd99ff"];
 
   const getColor = () => {
     let num = Math.floor(Math.random() * colors.length);
-
     return colors[num];
   };
 
   return (
     <div className="aboutCard">
       <span>
-        <b>{data.title}</b>
+        <h2>{data.title}</h2>
+        <hr />
       </span>
       {data.sections_array?.map((section) => (
         <div key={section.id}>
-          <span>{section.title}</span>
+          <span className="skills-subtitle">{section.title}</span>
           <ul className="list">
-            {section.skills.map((skills, i) => (
+            {section.skills.map((skills) => (
               <li
                 className="list-item"
                 style={{ "background-color": getColor(), color: "white" }}
