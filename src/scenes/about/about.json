@@ -18,27 +18,27 @@
           "title": "Programming Languages",
           "skills": [
             {
-              "item_id": 1,
+              "id": 1,
               "item": "JavaScript"
             },
             {
-              "item_id": 2,
+              "id": 2,
               "item": "HTML"
             },
             {
-              "item_id": 3,
+              "id": 3,
               "item": "CSS"
             },
             {
-              "item_id": 4,
+              "id": 4,
               "item": "PHP"
             },
             {
-              "item_id": 5,
+              "id": 5,
               "item": "C++"
             },
             {
-              "item_id": 6,
+              "id": 6,
               "item": "Python"
             }
           ]
@@ -48,51 +48,51 @@
           "title": "Technologies and Frameworks",
           "skills": [
             {
-              "item_id": 1,
+              "id": 1,
               "item": "Git"
             },
             {
-              "item_id": 2,
+              "id": 2,
               "item": "Postman"
             },
             {
-              "item_id": 3,
+              "id": 3,
               "item": "Jenkins"
             },
             {
-              "item_id": 4,
+              "id": 4,
               "item": "Datadog"
             },
             {
-              "item_id": 5,
+              "id": 5,
               "item": "Sentry"
             },
             {
-              "item_id": 6,
+              "id": 6,
               "item": "Laravel"
             },
             {
-              "item_id": 7,
+              "id": 7,
               "item": "React"
             },
             {
-              "item_id": 8,
+              "id": 8,
               "item": "Selenium"
             },
             {
-              "item_id": 9,
+              "id": 9,
               "item": "Excel"
             },
             {
-              "item_id": 10,
+              "id": 10,
               "item": "Microsoft Word"
             },
             {
-              "item_id": 11,
+              "id": 11,
               "item": "MySQL"
             },
             {
-              "item_id": 12,
+              "id": 12,
               "item": "Zustand"
             }
           ]
@@ -102,11 +102,11 @@
           "title": "Other Skills",
           "skills": [
             {
-              "item_id": 1,
+              "id": 1,
               "item": "Excellenet critical-thinking and problem-solving skills"
             },
             {
-              "item_id": 2,
+              "id": 2,
               "item": "Great written and verbal communication skills"
             }
           ]
