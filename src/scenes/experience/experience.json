@@ -8,28 +8,28 @@
       "description": "Developed and delivered robust production code for a wide array of projects, including both frontend and backend production.",
       "technologies": [
         {
-          "tech_id": 1,
-          "tech": "PHP"
+          "id": 1,
+          "item": "PHP"
         },
         {
-          "tech_id": 2,
-          "tech": "MySQL"
+          "id": 2,
+          "item": "MySQL"
         },
         {
-          "tech_id": 3,
-          "tech": "HTML"
+          "id": 3,
+          "item": "HTML"
         },
         {
-          "tech_id": 4,
-          "tech": "CSS"
+          "id": 4,
+          "item": "CSS"
         },
         {
-          "tech_id": 5,
-          "tech": "JavaScript"
+          "id": 5,
+          "item": "JavaScript"
         },
         {
-          "tech_id": 6,
-          "tech": "Postman"
+          "id": 6,
+          "item": "Postman"
         }
       ]
     },

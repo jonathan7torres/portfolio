@@ -1,16 +1,17 @@
 import React from "react";
 import "./style/experienceCard.scss";
+import ColorfulList from "../lists/colorfulList";
 
-export default function ExperienceCard({ props }) {
+export default function ExperienceCard({ job }) {
   return (
-    <div className="card-experience">
-      <div className="">
-        <p className="card-company">{props.company}</p>
-        <p className="card-title">{props.title}</p>
-        <p className="card-period">{props.period}</p>
-      </div>
-      <div className="">
-        <p>{props.description}</p>
+    <div className="experience-body">
+      <div className="div-experience-title">
+        <span className="experience-title">{job.title}</span> -
+        <span className="experience-company">{job.company}</span>
+        <hr />
+        <div className="experience-period">{job.period}</div>
+        <p className="experience-description">{job.description}</p>
+        {job.technologies && <ColorfulList list={job.technologies} />}
       </div>
     </div>
   );

@@ -1,0 +1,13 @@
+.card-container {
+  background-color: azure;
+  border: 1px black solid;
+  border-radius: 10px;
+  margin: 50px;
+  width: 500px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 480px) {
+}
