@@ -1,4 +1,8 @@
-.years {
-  text-align: right;
-  background-color: aquamarine;
+.education-university,
+.education-period {
+  display: inline;
+}
+
+.education-period {
+  margin-left: 5px;
 }

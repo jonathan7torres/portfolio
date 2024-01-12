@@ -4,6 +4,7 @@ import usePageStore from "../../stores/usePageStore";
 import EducationCard from "../../components/cards/educationCard";
 import SkillsCard from "../../components/cards/skillsCard";
 import "../style/screensStyle.scss";
+import Card from "../../components/cards/card";
 
 export default function About({ pageName }) {
   const [education, setEducation] = useState([]);
@@ -19,8 +20,16 @@ export default function About({ pageName }) {
   return (
     <section>
       <h1 className="screen-title">About</h1>
-      <EducationCard data={education} />
-      <SkillsCard data={skills} />
+      <Card
+        key={skills.id}
+        title={skills.title}
+        children={<SkillsCard skillSections={skills.sections} />}
+      />
+      <Card
+        key={education.id}
+        title={education.title}
+        children={<EducationCard education={education} />}
+      />
     </section>
   );
 }

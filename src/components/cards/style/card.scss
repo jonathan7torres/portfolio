@@ -1,13 +1,19 @@
 .card-container {
-  background-color: azure;
-  border: 1px black solid;
-  border-radius: 10px;
-  margin: 50px;
-  width: 500px;
+  margin: 150px;
+  width: 700px;
   height: auto;
   margin-left: auto;
   margin-right: auto;
+  min-width: 360px;
+}
+
+.card-title {
+  font-size: 20px;
+  font-weight: bold;
 }
 
 @media screen and (max-width: 480px) {
+  .card-container {
+    width: auto;
+  }
 }

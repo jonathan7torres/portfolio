@@ -1,23 +1,18 @@
 import React from "react";
-import "./style/aboutCard.scss";
 import "./style/educationCard.scss";
 
-export default function EducationCard({ data }) {
+export default function EducationCard({ education }) {
   return (
-    <div className="aboutCard">
-      <span>
-        <h2>{data.title}</h2>
-      </span>
-      <hr />
-      <p>
-        <span className="university">{data.university}</span>
-        <span className="years">
-          {data.year_started} - {data.year_graduated}
-        </span>
-      </p>
-      <p>
-        {data.degree_level}, {data.major}
-      </p>
+    <div className="education-body">
+      <div>
+        <div className="education-university">{education.university}</div>
+        <div className="education-period">
+          ({education.year_started} - {education.year_graduated})
+        </div>
+      </div>
+      <div>
+        {education.degree_level}, {education.major}
+      </div>
     </div>
   );
 }

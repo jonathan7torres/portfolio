@@ -1,17 +1,13 @@
 import React from "react";
-import "./style/skillsCard.scss";
 import ColorfulList from "../lists/colorfulList";
+import "./style/skillsCard.scss";
 
-export default function SkillsCard({ data }) {
+export default function SkillsCard({ skillSections }) {
   return (
-    <div className="aboutCard">
-      <span>
-        <h2>{data.title}</h2>
-      </span>
-      <hr />
-      {data.sections_array?.map((section) => (
+    <div className="skills-body">
+      {skillSections?.map((section) => (
         <div key={section.id}>
-          <span className="skills-subtitle">{section.title}</span>
+          <div>{section.title}:</div>
           {section.skills && <ColorfulList list={section.skills} />}
         </div>
       ))}

@@ -17,7 +17,11 @@ export default function Experience({ pageName }) {
     <section>
       <h1 className="screen-title">Experience</h1>
       {ExperienceJson.jobs.map((job) => (
-        <Card key={job.id} children={<ExperienceCard job={job} />} />
+        <Card
+          key={job.id}
+          title={job.title}
+          children={<ExperienceCard job={job} />}
+        />
       ))}
     </section>
   );
