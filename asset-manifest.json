@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.8d0341b4.css",
-    "main.js": "/portfolio/static/js/main.266f5d51.js",
+    "main.css": "/portfolio/static/css/main.345515e7.css",
+    "main.js": "/portfolio/static/js/main.0797610e.js",
     "static/media/JonathanTorresResume.pdf": "/portfolio/static/media/JonathanTorresResume.d4a0dbd6eb69cbb4f7a5.pdf",
     "index.html": "/portfolio/index.html",
-    "main.8d0341b4.css.map": "/portfolio/static/css/main.8d0341b4.css.map",
-    "main.266f5d51.js.map": "/portfolio/static/js/main.266f5d51.js.map"
+    "main.345515e7.css.map": "/portfolio/static/css/main.345515e7.css.map",
+    "main.0797610e.js.map": "/portfolio/static/js/main.0797610e.js.map"
   },
   "entrypoints": [
-    "static/css/main.8d0341b4.css",
-    "static/js/main.266f5d51.js"
+    "static/css/main.345515e7.css",
+    "static/js/main.0797610e.js"
   ]
 }
