@@ -5,14 +5,41 @@
       "company": "Upwards (formerly WeeCare)",
       "title": "Junior Software Engineer",
       "period": "Decemeber 2020 - November 2023",
-      "description": "Description 1"
+      "description": "Developed and delivered robust production code for a wide array of projects, including both frontend and backend production.",
+      "technologies": [
+        {
+          "tech_id": 1,
+          "tech": "PHP"
+        },
+        {
+          "tech_id": 2,
+          "tech": "MySQL"
+        },
+        {
+          "tech_id": 3,
+          "tech": "HTML"
+        },
+        {
+          "tech_id": 4,
+          "tech": "CSS"
+        },
+        {
+          "tech_id": 5,
+          "tech": "JavaScript"
+        },
+        {
+          "tech_id": 6,
+          "tech": "Postman"
+        }
+      ]
     },
     {
       "id": 2,
       "company": "Data One POS, Inc.",
       "title": "Technical Intern",
       "period": "June 2019 - September 2019",
-      "description": "Description 2"
+      "description": "Description 2",
+      "technologies": null
     }
   ]
 }
