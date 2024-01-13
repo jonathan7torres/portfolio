@@ -1,15 +1,26 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import linkedin from "../../assets/images/linkedIn.png";
 import github from "../../assets/images/github-mark.png";
 import gmail from "../../assets/images/gmail.png";
 import logo from "../../assets/images/JT.png";
+import logoWhite from "../../assets/images/JT-white.png";
 import resume from "../../assets/images/resume.png";
 import resumePdf from "../../assets/files/JonathanTorresResume.pdf";
 import "./footer.scss";
 import { NavLink } from "react-router-dom";
+import useDarkModeStore from "../../stores/darkModeStore";
 
 export default function Footer() {
   const [isDownloadButtonShowing, setIsDownloadButtonShowing] = useState(false);
+  const { darkMode } = useDarkModeStore();
+
+  useEffect(() => {
+    if (darkMode) {
+      AddDarkMode();
+    } else {
+      RemoveDarkMode();
+    }
+  }, [darkMode]);
 
   const onResumeClick = () => {
     setIsDownloadButtonShowing(!isDownloadButtonShowing);
@@ -77,8 +88,32 @@ export default function Footer() {
         </div>
       </section>
       <div className="footer-div-logo">
-        <img src={logo} alt="log" className="footer-logo" />
+        {darkMode ? (
+          <img src={logoWhite} alt="logo" className="footer-logo" />
+        ) : (
+          <img src={logo} alt="logo" className="footer-logo" />
+        )}
       </div>
     </section>
   );
+}
+
+function AddDarkMode() {
+  var navigation = document.getElementsByClassName("footer");
+  navigation[0].classList.add("dark");
+
+  const links = document.getElementsByClassName("pages-link");
+  [...links].forEach((element) => {
+    element.classList.add("dark");
+  });
+}
+
+function RemoveDarkMode() {
+  var navigation = document.getElementsByClassName("footer");
+  navigation[0].classList.remove("dark");
+
+  const links = document.getElementsByClassName("pages-link");
+  [...links].forEach((element) => {
+    element.classList.remove("dark");
+  });
 }

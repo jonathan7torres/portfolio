@@ -10,9 +10,19 @@
   min-width: 276px;
 }
 
+.navigation.dark {
+  background-color: black;
+  color: white;
+}
+
 .logo {
   width: 50px;
   margin-left: 50px;
+}
+
+.button-dark {
+  background-color: white;
+  color: black;
 }
 
 .navigation-menu {
@@ -53,6 +63,10 @@
   text-decoration: none;
   display: block;
   color: black;
+}
+
+.link.dark {
+  color: white;
 }
 
 .link:hover {

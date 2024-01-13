@@ -11,7 +11,7 @@ import TechStack from "./scenes/techStack/techStack";
 import Updates from "./scenes/updates/updates";
 
 function App() {
-  const { visitedPages, setAllPagesVisited } = usePageStore();
+  const { visitedPages, setAllPagesVisited, allPagesVisted } = usePageStore();
 
   useEffect(() => {
     if (
@@ -26,7 +26,7 @@ function App() {
     ) {
       setAllPagesVisited();
     }
-  }, [visitedPages, setAllPagesVisited]);
+  }, [visitedPages, setAllPagesVisited, allPagesVisted]);
 
   return (
     <div className="App">
