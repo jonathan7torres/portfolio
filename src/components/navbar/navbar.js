@@ -54,7 +54,7 @@ export default function NavBar() {
           <li>
             <NavLink
               to="/portfolio"
-              className={({ isActive }) => (isActive ? "link active" : "link")}
+              className={({ isActive }) => handleClassName(isActive, darkMode)}
             >
               Home
             </NavLink>
@@ -62,7 +62,7 @@ export default function NavBar() {
           <li>
             <NavLink
               to="/experience"
-              className={({ isActive }) => (isActive ? "link active" : "link")}
+              className={({ isActive }) => handleClassName(isActive, darkMode)}
             >
               Experience
             </NavLink>
@@ -70,7 +70,7 @@ export default function NavBar() {
           <li>
             <NavLink
               to="/about"
-              className={({ isActive }) => (isActive ? "link active" : "link")}
+              className={({ isActive }) => handleClassName(isActive, darkMode)}
             >
               About
             </NavLink>
@@ -79,6 +79,18 @@ export default function NavBar() {
       </div>
     </nav>
   );
+}
+
+function handleClassName(isActive, darkMode) {
+  let className = "link";
+  if (isActive) {
+    className += " active";
+  }
+  if (darkMode) {
+    className += " dark";
+  }
+
+  return className;
 }
 
 function AddDarkMode() {

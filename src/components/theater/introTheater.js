@@ -12,10 +12,7 @@ export default function IntroTheater() {
     if (darkMode) {
       AddDarkMode();
       typed1 = new Typed(el.current, {
-        strings: [
-          "_Welcome to the dark side...^2000",
-          "_I love you my girl^3000",
-        ],
+        strings: ["_Welcome to the dark side...^2000"],
         typeSpeed: 90,
         showCursor: false,
         backSpeed: 50,
