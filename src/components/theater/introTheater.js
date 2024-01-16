@@ -18,7 +18,7 @@ export default function IntroTheater() {
           "_My Girl...^1000",
           "_My Hot Dogger...^1000",
           "_I can't wait to see you...^1000",
-          "_I love you so much VV <3 ^2000",
+          "_I love you so so so much VV ^2000",
         ],
         typeSpeed: 90,
         showCursor: false,
