@@ -28,7 +28,7 @@ export default function NavBar() {
 
   return (
     <nav className="navigation">
-      <NavLink to="/" className="brand-name">
+      <NavLink to="/portfolio" className="brand-name">
         {darkMode ? (
           <img src={logoWhite} alt="logo" className="logo" />
         ) : (
@@ -53,7 +53,7 @@ export default function NavBar() {
         <ul>
           <li>
             <NavLink
-              to="/"
+              to="/porfolio"
               className={({ isActive }) => handleClassName(isActive, darkMode)}
             >
               Home
