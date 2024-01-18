@@ -35,21 +35,18 @@ export default function NavBar() {
           <img src={logo} alt="logo" className="logo" />
         )}
       </NavLink>
-      {allPagesVisited && (
-        <button
-          onClick={toggleDarkMode}
-          className={darkMode ? "button-dark" : "button-light"}
-        >
-          {darkMode ? "Return to the Light" : "Enter the dark side"}
-        </button>
-      )}
 
-      <button className="hamburger" onClick={onExpand}>
-        <img src={hamburgerMenu} alt="burger" className="hamburger-menu" />
-      </button>
       <div
         className={isExapnded ? "navigation-menu expanded" : "navigation-menu"}
       >
+        {allPagesVisited && (
+          <button
+            onClick={toggleDarkMode}
+            className={darkMode ? "toggle-button dark" : "toggle-button"}
+          >
+            {darkMode ? "Return to the Light" : "Enter the dark side"}
+          </button>
+        )}
         <ul>
           <li>
             <NavLink
@@ -76,6 +73,9 @@ export default function NavBar() {
             </NavLink>
           </li>
         </ul>
+        <button className="hamburger" onClick={onExpand}>
+          <img src={hamburgerMenu} alt="burger" className="hamburger-menu" />
+        </button>
       </div>
     </nav>
   );

@@ -23,13 +23,26 @@ $mint: #64ffda;
   margin-left: 50px;
 }
 
-.button-dark {
-  background-color: white;
-  color: black;
+.toggle-button {
+  margin-top: auto;
+  margin-bottom: auto;
+  height: auto;
+  margin-left: auto;
+  border-radius: 10px;
+  background-color: transparent;
+  vertical-align: middle;
+  padding: 5px;
+}
+
+.toggle-button.dark {
+  border-radius: 10px;
+  border: 1px $mint solid;
+  color: $mint;
 }
 
 .navigation-menu {
   margin-left: auto;
+  display: flex;
 }
 
 .navigation-menu ul {
