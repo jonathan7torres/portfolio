@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.8efc2047.css",
-    "main.js": "/portfolio/static/js/main.3491e445.js",
+    "main.js": "/portfolio/static/js/main.0465af1c.js",
     "static/media/JonathanTorresResume.pdf": "/portfolio/static/media/JonathanTorresResume.d4a0dbd6eb69cbb4f7a5.pdf",
     "static/media/github-mark-white.png": "/portfolio/static/media/github-mark-white.987334e9f782cc505f25.png",
     "index.html": "/portfolio/index.html",
     "main.8efc2047.css.map": "/portfolio/static/css/main.8efc2047.css.map",
-    "main.3491e445.js.map": "/portfolio/static/js/main.3491e445.js.map"
+    "main.0465af1c.js.map": "/portfolio/static/js/main.0465af1c.js.map"
   },
   "entrypoints": [
     "static/css/main.8efc2047.css",
-    "static/js/main.3491e445.js"
+    "static/js/main.0465af1c.js"
   ]
 }
