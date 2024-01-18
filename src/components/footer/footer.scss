@@ -10,10 +10,10 @@
 
 .profiles-row {
   text-align: center;
-  margin-top: 50px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 70px;
+  padding-top: 50px;
 }
 
 .links-row {
@@ -97,6 +97,14 @@
   width: 300px;
   margin-left: 10px;
   margin-right: 10px;
+}
+
+.button-resume-download.dark-button {
+  background-color: white;
+}
+
+.button-resume-download.dark-button:hover {
+  background-color: lightcoral;
 }
 
 @media screen and (max-width: 420px) {

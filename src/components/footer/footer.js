@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from "react";
 import linkedin from "../../assets/images/linkedIn.png";
 import github from "../../assets/images/github-mark.png";
+import githubWhite from "../../assets/images/github-mark-white.png";
 import gmail from "../../assets/images/gmail.png";
 import logo from "../../assets/images/JT.png";
 import logoWhite from "../../assets/images/JT-white.png";
 import resume from "../../assets/images/resume.png";
+import resumeWhite from "../../assets/images/resume-white.png";
 import resumePdf from "../../assets/files/JonathanTorresResume.pdf";
 import "./footer.scss";
 import { NavLink } from "react-router-dom";
@@ -28,7 +30,7 @@ export default function Footer() {
 
   return (
     <section className="footer">
-      <hr />
+      {darkMode ? <></> : <hr />}
 
       <section className="table">
         <div className="profiles-row">
@@ -49,19 +51,39 @@ export default function Footer() {
             rel="noreferrer"
             className="link-github footer-link"
           >
-            <img src={github} alt="github" className="footer-image" />
+            {darkMode ? (
+              <img src={githubWhite} alt="github" className="footer-image" />
+            ) : (
+              <img src={github} alt="github" className="footer-image" />
+            )}
           </a>
           <span className="footer-link">
-            <input
-              type="image"
-              src={resume}
-              alt="resume"
-              className="footer-image"
-              onClick={onResumeClick}
-            />
+            {darkMode ? (
+              <input
+                type="image"
+                src={resumeWhite}
+                alt="resume"
+                className="footer-image"
+                onClick={onResumeClick}
+              />
+            ) : (
+              <input
+                type="image"
+                src={resume}
+                alt="resume"
+                className="footer-image"
+                onClick={onResumeClick}
+              />
+            )}
           </span>
           {isDownloadButtonShowing && (
-            <span className="button-resume-download">
+            <span
+              className={
+                darkMode
+                  ? "button-resume-download dark-button"
+                  : "button-resume-download"
+              }
+            >
               <a
                 href={resumePdf}
                 download="JonathanTorresResume"
@@ -76,12 +98,24 @@ export default function Footer() {
         </div>
         <div className="links-row">
           <div className="column column1">
-            <NavLink to="/tech-stack" className="pages-link link-left">
+            <NavLink
+              to="/tech-stack"
+              className={
+                darkMode ? "pages-link link-left dark" : "pages-link link-left"
+              }
+            >
               Tech Stack
             </NavLink>
           </div>
           <div className="column">
-            <NavLink to="/updates" className="pages-link link-right">
+            <NavLink
+              to="/updates"
+              className={
+                darkMode
+                  ? "pages-link link-right dark"
+                  : "pages-link link-right"
+              }
+            >
               Site Updates
             </NavLink>
           </div>
