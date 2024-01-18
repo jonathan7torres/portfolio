@@ -1,3 +1,10 @@
+$faint-white: rgba(255, 255, 255, 0.844);
+
 .body-tech-stack {
   height: 500px;
+}
+
+.tech-stack-div.dark {
+  color: $faint-white;
+  text-align: center;
 }

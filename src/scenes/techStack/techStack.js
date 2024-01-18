@@ -17,7 +17,7 @@ export default function TechStack({ pageName }) {
       <h1 className={darkMode ? "screen-title dark" : "screen-title"}>
         Tech Stack
       </h1>
-      <div>
+      <div className={darkMode ? "tech-stack-div dark" : "tech-stack-div"}>
         <div>Tech Stack Comming Soon...</div>
       </div>
     </section>

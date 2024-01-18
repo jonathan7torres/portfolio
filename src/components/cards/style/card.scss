@@ -1,3 +1,5 @@
+$faint-white: rgba(255, 255, 255, 0.844);
+
 .card-container {
   margin: 150px;
   width: 700px;
@@ -8,7 +10,7 @@
 }
 
 .card-container.dark {
-  color: rgba(255, 255, 255, 0.844);
+  color: $faint-white;
 }
 
 .card-title {

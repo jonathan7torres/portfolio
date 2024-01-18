@@ -27,6 +27,12 @@
           "date": "1/12/2024",
           "description": "Standardized Card Components",
           "visible": true
+        },
+        {
+          "id": 5,
+          "date": "1/18/2024",
+          "description": "Dark Mode now available...",
+          "visible": true
         }
       ]
     },
@@ -80,8 +86,8 @@
           "id": 7,
           "date": "TBD",
           "description": "Dark mode incoming...",
-          "visible": true,
-          "completed": false
+          "visible": false,
+          "completed": true
         }
       ]
     },
