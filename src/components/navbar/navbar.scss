@@ -1,3 +1,6 @@
+$dark-background: rgb(15 23 42);
+$mint: #64ffda;
+
 .navigation {
   height: 60px;
   width: 100%;
@@ -11,7 +14,7 @@
 }
 
 .navigation.dark {
-  background-color: black;
+  background-color: $dark-background;
   color: white;
 }
 
@@ -71,6 +74,10 @@
 
 .link:hover {
   color: limegreen;
+}
+
+.link.dark:hover {
+  color: $mint;
 }
 
 .active {

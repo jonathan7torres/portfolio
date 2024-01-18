@@ -9,11 +9,6 @@ export default function Home({ pageName }) {
   const { darkMode } = useDarkModeStore();
 
   useEffect(() => {
-    if (darkMode) {
-      AddDarkMode();
-    } else {
-      RemoveDarkMode();
-    }
     addVisitedPage(pageName);
   }, [addVisitedPage, pageName, darkMode]);
 
@@ -22,14 +17,4 @@ export default function Home({ pageName }) {
       <IntroTheater />
     </section>
   );
-}
-
-function AddDarkMode() {
-  var navigation = document.getElementsByClassName("intro");
-  navigation[0].classList.add("dark");
-}
-
-function RemoveDarkMode() {
-  var navigation = document.getElementsByClassName("intro");
-  navigation[0].classList.remove("dark");
 }
