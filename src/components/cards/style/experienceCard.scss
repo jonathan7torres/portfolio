@@ -1,3 +1,7 @@
+.experience-body {
+  padding: 10px;
+}
+
 .experience-company,
 .experience-period {
   display: inline;
@@ -5,4 +9,8 @@
 
 .experience-period {
   float: right;
+}
+
+.experience-description {
+  padding: 20px;
 }
