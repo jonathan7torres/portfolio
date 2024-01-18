@@ -59,15 +59,8 @@ $mint: #64ffda;
   border: 0;
   height: 50px;
   width: 50px;
-  padding: 0.5rem;
   border-radius: 50%;
   background-color: transparent;
-  cursor: pointer;
-  transition: background-color 0.2s ease-in-out;
-  position: absolute;
-  top: 50%;
-  right: 25px;
-  transform: translateY(-50%);
   display: none;
 }
 
@@ -100,12 +93,8 @@ $mint: #64ffda;
 
 // navbar.css
 @media screen and (max-width: 480px) {
-  .navigation-menu ul {
-    display: none;
-  }
-
   .hamburger {
-    display: block;
+    display: inline;
   }
 
   .navigation-menu.expanded ul {
@@ -115,6 +104,7 @@ $mint: #64ffda;
   }
 
   .navigation-menu ul {
+    display: none;
     position: absolute;
     top: 60px;
     left: 0;

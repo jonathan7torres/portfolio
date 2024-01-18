@@ -105,7 +105,7 @@
           "id": 2,
           "date": "1/18/2024",
           "description": "In mobile view, toggle dark mode button overlapping dropdown menu",
-          "visible": true
+          "visible": false
         }
       ]
     }
