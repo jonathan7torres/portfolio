@@ -15,7 +15,7 @@ const usePageStore = create(
       setAllPagesVisited: () => set({ allPagesVisited: true }),
     }),
     {
-      name: "pagesVisted store",
+      name: "pagesVisited store",
     }
   )
 );
