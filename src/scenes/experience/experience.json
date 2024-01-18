@@ -29,7 +29,19 @@
         },
         {
           "id": 6,
+          "item": "React"
+        },
+        {
+          "id": 7,
           "item": "Postman"
+        },
+        {
+          "id": 8,
+          "item": "DataDog"
+        },
+        {
+          "id": 9,
+          "item": "Sentry"
         }
       ]
     },
