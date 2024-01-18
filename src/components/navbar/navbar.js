@@ -53,7 +53,7 @@ export default function NavBar() {
         <ul>
           <li>
             <NavLink
-              to="/porfolio"
+              to="/portfolio"
               className={({ isActive }) => handleClassName(isActive, darkMode)}
             >
               Home
