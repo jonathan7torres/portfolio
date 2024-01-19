@@ -46,7 +46,7 @@ export default function Footer() {
             <img src={linkedin} alt="linkedin" className="footer-image" />
           </a>
           <a
-            href="https://github.com/jonathan7torres/portfolio"
+            href="https://github.com/jonathan7torres"
             target="_blank"
             rel="noreferrer"
             className="link-github footer-link"
