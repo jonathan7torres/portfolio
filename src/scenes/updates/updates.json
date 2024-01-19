@@ -43,7 +43,7 @@
         {
           "id": 1,
           "date": "TBD",
-          "description": "Hanlde mobile view",
+          "description": "Handle mobile view",
           "visible": true,
           "completed": false
         },
@@ -51,8 +51,8 @@
           "id": 2,
           "date": "TBD",
           "description": "Update tech stack",
-          "visible": true,
-          "completed": false
+          "visible": false,
+          "completed": true
         },
         {
           "id": 3,
@@ -106,6 +106,12 @@
           "date": "1/18/2024",
           "description": "In mobile view, toggle dark mode button overlapping dropdown menu",
           "visible": false
+        },
+        {
+          "id": 3,
+          "date": "1/19/2024",
+          "description": "In mobile view, overflow in components not handled",
+          "visible": true
         }
       ]
     }

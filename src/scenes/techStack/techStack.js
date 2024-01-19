@@ -3,6 +3,8 @@ import "./techStack.scss";
 import "../style/screensStyle.scss";
 import usePageStore from "../../stores/usePageStore";
 import useDarkModeStore from "../../stores/darkModeStore";
+import Card from "../../components/cards/card";
+import TechStackCardBody from "../../components/cards/techStackCardBody";
 
 export default function TechStack({ pageName }) {
   const { addVisitedPage } = usePageStore();
@@ -18,7 +20,7 @@ export default function TechStack({ pageName }) {
         Tech Stack
       </h1>
       <div className={darkMode ? "tech-stack-div dark" : "tech-stack-div"}>
-        <div>Tech Stack Comming Soon...</div>
+        <Card title="Tech" children={<TechStackCardBody />} />
       </div>
     </section>
   );
