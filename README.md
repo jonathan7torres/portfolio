@@ -11,6 +11,7 @@ This is the source code for my Portfolio Project
 - Reactjs
 - Zustand
 - Typed.js
+- SASS
 
 ## Updates
 
