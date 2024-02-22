@@ -40,6 +40,10 @@
             {
               "id": 6,
               "item": "Python"
+            },
+            {
+              "id": 7,
+              "item": "YAML"
             }
           ]
         },
@@ -94,6 +98,18 @@
             {
               "id": 12,
               "item": "Zustand"
+            },
+            {
+              "id": 13,
+              "item": "NodeJs"
+            },
+            {
+              "id": 14,
+              "item": "Express"
+            },
+            {
+              "id": 15,
+              "item": "Puphpeteer"
             }
           ]
         },
@@ -102,11 +118,19 @@
           "title": "Other Skills",
           "skills": [
             {
-              "id": 1,
+              "id": 0,
               "item": "Excellenet critical-thinking and problem-solving skills"
             },
             {
+              "id": 1,
+              "item": "Testing & Debugging"
+            },
+            {
               "id": 2,
+              "item": "Proficient in Microsoft Office"
+            },
+            {
+              "id": 3,
               "item": "Great written and verbal communication skills"
             }
           ]

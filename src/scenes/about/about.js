@@ -23,14 +23,14 @@ export default function About({ pageName }) {
     <section>
       <h1 className={darkMode ? "screen-title dark" : "screen-title"}>About</h1>
       <Card
-        key={skills.id}
-        title={skills.title}
-        children={<SkillsCard skillSections={skills.sections} />}
-      />
-      <Card
         key={education.id}
         title={education.title}
         children={<EducationCard education={education} />}
+      />
+      <Card
+        key={skills.id}
+        title={skills.title}
+        children={<SkillsCard skillSections={skills.sections} />}
       />
     </section>
   );
