@@ -40,7 +40,7 @@ function App() {
     <div className="App">
       <NavBar />
       <Routes>
-        <Route path="/" element={<Home pageName="home" />} />
+        <Route index path="/" element={<Home pageName="home" />} />
         <Route path="/about" element={<About pageName="about" />} />
         <Route
           path="/experience"
