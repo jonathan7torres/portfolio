@@ -35,7 +35,12 @@ export default function Footer() {
       <section className="table">
         <div className="profiles-row">
           <a href="mailto:jon7torres@gmail.com" className="footer-link">
-            <img src={gmail} alt="gmail" className="footer-image" />
+            <img
+              src={gmail}
+              alt="gmail"
+              className="footer-image"
+              title="gmail"
+            />
           </a>
           <a
             href="https://www.linkedin.com/in/jonathanatorres"
@@ -43,7 +48,12 @@ export default function Footer() {
             rel="noreferrer"
             className="link-linkedin footer-link"
           >
-            <img src={linkedin} alt="linkedin" className="footer-image" />
+            <img
+              src={linkedin}
+              alt="linkedin"
+              className="footer-image"
+              title="linkedin"
+            />
           </a>
           <a
             href="https://github.com/jonathan7torres"
@@ -52,9 +62,19 @@ export default function Footer() {
             className="link-github footer-link"
           >
             {darkMode ? (
-              <img src={githubWhite} alt="github" className="footer-image" />
+              <img
+                src={githubWhite}
+                alt="github"
+                className="footer-image"
+                title="github"
+              />
             ) : (
-              <img src={github} alt="github" className="footer-image" />
+              <img
+                src={github}
+                alt="github"
+                className="footer-image"
+                title="github"
+              />
             )}
           </a>
           <span className="footer-link">
@@ -123,9 +143,14 @@ export default function Footer() {
       </section>
       <div className="footer-div-logo">
         {darkMode ? (
-          <img src={logoWhite} alt="logo" className="footer-logo" />
+          <img
+            src={logoWhite}
+            alt="logo"
+            className="footer-logo"
+            title="logo"
+          />
         ) : (
-          <img src={logo} alt="logo" className="footer-logo" />
+          <img src={logo} alt="logo" className="footer-logo" title="logo" />
         )}
       </div>
     </section>
