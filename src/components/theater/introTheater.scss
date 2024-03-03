@@ -13,3 +13,12 @@
 .title-name.dark {
   color: white;
 }
+
+
+@media screen and (max-width: 480px) {
+  .div-typed {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 200px;
+  }
+}
