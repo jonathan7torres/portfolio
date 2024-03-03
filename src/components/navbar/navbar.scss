@@ -10,7 +10,6 @@ $mint: #64ffda;
   padding: 0.5rem 0rem;
   background-color: transparent;
   color: black;
-  min-width: 276px;
 }
 
 .navigation.dark {
@@ -95,6 +94,7 @@ $mint: #64ffda;
 @media screen and (max-width: 500px) {
   .hamburger {
     display: inline;
+    margin-right: 20px;
   }
 
   .navigation-menu.expanded ul {
