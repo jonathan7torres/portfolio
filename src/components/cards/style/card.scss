@@ -18,8 +18,17 @@ $faint-white: rgba(255, 255, 255, 0.844);
   font-weight: bold;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 800px) {
   .card-container {
     width: auto;
+    margin: 50px;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  .card-container {
+    width: auto;
+    margin: 50px;
   }
 }

@@ -14,3 +14,15 @@
 .experience-description {
   padding: 20px;
 }
+
+@media screen and (max-width: 600px) {
+  .experience-company,
+  .experience-period {
+    display:table; 
+    width:100%;     
+  }
+
+  .experience-description {
+    margin-top: 20px;
+  }
+}

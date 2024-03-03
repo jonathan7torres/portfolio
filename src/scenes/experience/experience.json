@@ -57,7 +57,7 @@
       "id": 3,
       "company": "Project Management App - Full-stack Implementation",
       "title": "Projects",
-      "period": null,
+      "period": "(in Developement)",
       "description": "Developing a comprehensive project management application for the manufacturing industry to streamline production using a React frontend and Express backend, following a MVCS architecture.",
       "technologies": [
         {

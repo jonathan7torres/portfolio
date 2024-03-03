@@ -5,7 +5,17 @@ import useDarkModeStore from "../../stores/darkModeStore";
 export default function ColorfulList({ list }) {
   const { darkMode } = useDarkModeStore();
 
-  const colors = ["#ff8533", "#ff5050", "#668cff", "#40bf80", "#dd99ff"];
+  const colors = [
+    "#B7BF96", 
+    "#E25439", 
+    "#BF9550", 
+    "#E6B5A6", 
+    "#436B5C", 
+    "#42354C", 
+    "#6A1D2F", 
+    "#9B461F", // Prairie Sand
+    "#254252" // Blue Dianne
+  ];
   const darkModeBackground = "rgb(15 23 42)";
   const colorMint = "#64ffda";
 
