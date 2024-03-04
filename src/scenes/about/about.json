@@ -85,30 +85,22 @@
             },
             {
               "id": 9,
-              "item": "Excel"
-            },
-            {
-              "id": 10,
-              "item": "Microsoft Word"
-            },
-            {
-              "id": 11,
               "item": "MySQL"
             },
             {
-              "id": 12,
+              "id": 10,
               "item": "Zustand"
             },
             {
-              "id": 13,
+              "id": 11,
               "item": "NodeJs"
             },
             {
-              "id": 14,
+              "id": 12,
               "item": "Express"
             },
             {
-              "id": 15,
+              "id": 13,
               "item": "Puphpeteer"
             }
           ]

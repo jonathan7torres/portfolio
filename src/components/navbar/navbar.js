@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 import logo from "../../assets/images/JT.png";
 import logoWhite from "../../assets/images/JT-white.png";
 import hamburgerMenu from "../../assets/images/hamburger-menu.png";
+import hamburgerMenuWhite from "../../assets/images/hamburger-menu-white.png";
 import "./navbar.scss";
 import useDarkModeStore from "../../stores/darkModeStore";
 import usePageStore from "../../stores/usePageStore";
@@ -15,6 +16,10 @@ export default function NavBar() {
   const onExpand = () => {
     setIsExpanded(!isExapnded);
   };
+
+  const onNavClick = () => {
+    setIsExpanded(false);
+  }
 
   useEffect(() => {
     if (darkMode) {
@@ -52,6 +57,7 @@ export default function NavBar() {
             <NavLink
               to="/"
               className={({ isActive }) => handleClassName(isActive, darkMode)}
+              onClick={onNavClick}
             >
               Home
             </NavLink>
@@ -60,6 +66,7 @@ export default function NavBar() {
             <NavLink
               to="/experience"
               className={({ isActive }) => handleClassName(isActive, darkMode)}
+              onClick={onNavClick}
             >
               Experience
             </NavLink>
@@ -68,13 +75,14 @@ export default function NavBar() {
             <NavLink
               to="/about"
               className={({ isActive }) => handleClassName(isActive, darkMode)}
+              onClick={onNavClick}
             >
               About
             </NavLink>
           </li>
         </ul>
         <button className="hamburger" onClick={onExpand}>
-          <img src={hamburgerMenu} alt="burger" className="hamburger-menu" />
+          <img src={darkMode ?  hamburgerMenuWhite : hamburgerMenu} alt="burger" className="hamburger-menu" />
         </button>
       </div>
     </nav>
