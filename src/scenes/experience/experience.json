@@ -1,6 +1,13 @@
 {
   "jobs": [
     {
+      "id" : 0,
+      "company": "KPFF Consulting Engineers",
+      "title": "Junior System Administrator",
+      "period": "May 2024 - Present",
+      "description": "Assist with troubleshooting issues and provide technical support to over 150+ users across multiple US time zones virtually, enhancing user productivity and satisfaction. Support the IT team in maintaining hardware, software, and other systems, ensuring smooth operation and minimizing downtime. Organize and maintain IT resources, ensuring efficient utilization and accessibility."
+    },
+    {
       "id": 1,
       "company": "Upwards (formerly WeeCare)",
       "title": "Junior Software Engineer",
@@ -55,10 +62,11 @@
     },
     {
       "id": 3,
-      "company": "Project Management App - Full-stack Implementation",
+      "company": "Flutterkik - Full-Stack Application",
       "title": "Projects",
-      "period": "(in Developement)",
-      "description": "Developing a comprehensive project management application for the manufacturing industry to streamline production using a React frontend and Express backend, following a MVCS architecture.",
+      "period": "March 2024 - Present",
+      "description": "Independently built a web application that allows users to create personalized swim workouts and track USA swimming event standards. Front and back-end development using React and Node.js/Express.js respectively and utilizing AWS RDS host a MySQL database. Utilized JWT and cookies to implement user authentication and authorization best practices. Beta users can register using the key - Beta123",
+      "link": "flutterkik.com",
       "technologies": [
         {
           "id": 0,
