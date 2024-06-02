@@ -41,11 +41,6 @@ function App() {
       <NavBar />
       <Routes>
         <Route index path="/" element={<Home pageName="home" />} />
-        <Route path="/about" element={<About pageName="about" />} />
-        <Route
-          path="/experience"
-          element={<Experience pageName="experience" />}
-        />
         <Route
           path="/tech-stack"
           element={<TechStack pageName="tectStack" />}

@@ -8,38 +8,24 @@ export default function IntroTheater() {
   const { darkMode } = useDarkModeStore();
 
   useEffect(() => {
-    let typed1 = undefined;
     if (darkMode) {
       AddDarkMode();
-      typed1 = new Typed(el.current, {
-        strings: [
-          "Welcome to the dark side...^2000",
-          "My name is Jonathan Torres, I am a Software Engineer/ Front-end Developer<br>from Los Angeles, CA.^3000",
-        ],
-        typeSpeed: 90,
-        showCursor: false,
-        backSpeed: 50,
-        loop: true,
-        loopCount: 3,
-      });
     } else {
       RemoveDarkMode();
-      typed1 = new Typed(el.current, {
-        strings: [
-          "Hi there!^1000",
-          "Hey!^1000",
-          "Hello!^1000",
-          "My name is Jonathan Torres, I am a Software Engineer/ Front-end Developer<br>from Los Angeles, CA.^3000",
-          "Scroll down to<br> connect with me!^2000",
-          "My name is Jonathan Torres, I am a Software Engineer/ Front-end Developer<br>from Los Angeles, CA.^3000",
-        ],
-        typeSpeed: 90,
-        showCursor: false,
-        backSpeed: 50,
-        loop: true,
-        loopCount: 3,
-      });
     }
+
+    const typed1 = new Typed(el.current, {
+      strings: [
+        "Hey!^1000",
+        "Hi!^1000",
+        "Hello!^1000",
+        "My name is Jonathan Torres, I am a Software Developer<br>from Los Angeles, CA.^2000 <br> Scroll down to<br>find out more!",
+      ],
+      typeSpeed: 90,
+      showCursor: false,
+      backSpeed: 50,
+      loop: false,
+    });
 
     return () => {
       typed1.destroy();

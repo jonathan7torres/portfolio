@@ -79,7 +79,7 @@ $mint: #64ffda;
 }
 
 .link:hover {
-  color: #436B5C;
+  color: #436b5c;
 }
 
 .link.dark:hover {
@@ -88,6 +88,19 @@ $mint: #64ffda;
 
 .active {
   text-decoration: underline;
+}
+
+.nav-item {
+  // height: 50px;
+}
+
+.nav-image {
+  display: flex;
+  vertical-align: middle;
+  height: auto;
+  width: 25px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 // navbar.css
