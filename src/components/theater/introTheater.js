@@ -19,7 +19,7 @@ export default function IntroTheater() {
         "Hey!^1000",
         "Hi!^1000",
         "Hello!^1000",
-        "My name is Jonathan Torres, I am a Software Developer<br>from Los Angeles, CA.^2000 <br> Scroll down to<br>find out more!",
+        "My name is Jonathan Torres, I am a Software Developer<br>from Los Angeles, CA.^2000 <br> Scroll down to find out more!",
       ],
       typeSpeed: 90,
       showCursor: false,

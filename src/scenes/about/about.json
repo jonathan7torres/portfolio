@@ -3,10 +3,10 @@
     {
       "id": 1,
       "title": "Education",
-      "university": "California State University, Fullerton",
+      "university": "California State University Fullerton",
       "degree_level": "Bachelor's of Science",
       "major": "Computer Science",
-      "year_started": "2014",
+      "year_started": "",
       "year_graduated": "2020"
     },
     {
@@ -102,6 +102,10 @@
             {
               "id": 13,
               "item": "Puphpeteer"
+            },
+            {
+              "id": 14,
+              "item": "Microsoft Playwright"
             }
           ]
         },

@@ -6,9 +6,7 @@ export default function EducationCard({ education }) {
     <div className="education-body">
       <div>
         <div className="education-university">{education.university}</div>
-        <div className="education-period">
-          ({education.year_started} - {education.year_graduated})
-        </div>
+        <div className="education-period">{education.year_graduated}</div>
       </div>
       <div>
         {education.degree_level}, {education.major}

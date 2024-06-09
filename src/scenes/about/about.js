@@ -20,7 +20,7 @@ export default function About({ pageName }) {
   }, [addVisitedPage, pageName]);
 
   return (
-    <section>
+    <div>
       <h1 className={darkMode ? "screen-title dark" : "screen-title"}>About</h1>
       <Card
         key={education.id}
@@ -32,6 +32,6 @@ export default function About({ pageName }) {
         title={skills.title}
         children={<SkillsCard skillSections={skills.sections} />}
       />
-    </section>
+    </div>
   );
 }
