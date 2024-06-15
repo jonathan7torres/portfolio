@@ -1,5 +1,9 @@
 $dark-background: rgb(15 23 42);
 
+.App {
+  min-height: 100vh;
+}
+
 .App.dark {
   background-color: $dark-background;
 }

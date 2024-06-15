@@ -1,4 +1,4 @@
-import images from "./photos.json";
+import { Locations } from "./photos.js";
 import React, { useEffect, useState } from "react";
 import "./style.scss";
 
@@ -6,7 +6,7 @@ export default function Photos() {
   const [photos, setPhotos] = useState([]);
 
   useEffect(() => {
-    setPhotos(images["photos"]);
+    setPhotos(Locations);
   }, [photos]);
 
   return (
@@ -15,6 +15,7 @@ export default function Photos() {
         return (
           <div className="photos-grid-item" key={i}>
             <div>{photo.location}</div>
+            <img src={photo.source} alt={photo.alt} className="grid-photo" />
           </div>
         );
       })}
