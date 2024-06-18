@@ -4,7 +4,6 @@ import IntroTheater from "../../components/theater/introTheater";
 import usePageStore from "../../stores/usePageStore";
 import useDarkModeStore from "../../stores/darkModeStore";
 import About from "../about/about";
-import Photos from "../photos/photos.jsx";
 
 export default function Home({ pageName }) {
   const { addVisitedPage } = usePageStore();
@@ -18,7 +17,6 @@ export default function Home({ pageName }) {
     <div className="intro">
       <IntroTheater />
       <About />
-      <Photos />
     </div>
   );
 }

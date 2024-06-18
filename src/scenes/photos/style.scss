@@ -16,10 +16,20 @@
   position: relative;
 }
 
+.photos-grid-item.animate {
+  animation: fadeIn 5s;
+}
+
 .grid-photo {
   height: 100%;
   width: 100%;
   object-fit: cover;
+}
+
+.photos-grid-item.expand {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .photo-info {
@@ -40,6 +50,15 @@
 
 .reveal {
   display: flex;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @media screen and (max-width: 480px) {
