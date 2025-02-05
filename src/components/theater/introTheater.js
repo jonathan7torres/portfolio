@@ -14,7 +14,7 @@ export default function IntroTheater() {
       typed1 = new Typed(el.current, {
         strings: [
           "Welcome to the dark side...^2000",
-          "My name is Jonathan Torres, I am a Software Engineer/ Front-end Developer<br>from Los Angeles, CA.^3000",
+          "My name is Jonathan Torres, I am a Software Engineer/Full-Stack Developer<br>from Los Angeles, CA.^3000",
         ],
         typeSpeed: 90,
         showCursor: false,
@@ -29,9 +29,9 @@ export default function IntroTheater() {
           "Hi there!^1000",
           "Hey!^1000",
           "Hello!^1000",
-          "My name is Jonathan Torres, I am a Software Engineer/ Front-end Developer<br>from Los Angeles, CA.^3000",
+          "My name is Jonathan Torres, I am a Software Engineer/Full-Stack Developer<br>from Los Angeles, CA.^3000",
           "Scroll down to<br> connect with me!^2000",
-          "My name is Jonathan Torres, I am a Software Engineer/ Front-end Developer<br>from Los Angeles, CA.^3000",
+          "My name is Jonathan Torres, I am a Software Engineer/Full-Stack Developer<br>from Los Angeles, CA.^3000",
         ],
         typeSpeed: 90,
         showCursor: false,

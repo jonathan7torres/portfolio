@@ -33,6 +33,12 @@
           "date": "1/18/2024",
           "description": "Dark Mode now unlockable...",
           "visible": true
+        },
+        {
+          "id": 6,
+          "date": "2/05/2025",
+          "description": "Updated experience details.",
+          "visible": true
         }
       ]
     },

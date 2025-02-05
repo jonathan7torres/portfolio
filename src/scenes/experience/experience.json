@@ -1,18 +1,44 @@
 {
   "jobs": [
     {
-      "id" : 0,
+      "id": 0,
       "company": "KPFF Consulting Engineers",
-      "title": "Junior System Administrator",
+      "title": "Jr. System Administrator/Software Engineer",
       "period": "May 2024 - Present",
-      "description": "Assist with troubleshooting issues and provide technical support to over 150+ users across multiple US time zones virtually, enhancing user productivity and satisfaction. Support the IT team in maintaining hardware, software, and other systems, ensuring smooth operation and minimizing downtime. Organize and maintain IT resources, ensuring efficient utilization and accessibility."
+      "description": "Revamped the UI/UX of key components using React and Material-UI, enhancing user interaction and modernizing the design. Developed API endpoints in Node.js to automate tasks with Selenium scripts, improving workflows and boosting productivity. Implemented GitHub for version control and Docker for containerization, optimizing team collaboration and streamlining deployment workflows. Maintained a 99% uptime for administrative facilities by actively monitoring logs and escalating issues as needed.",
+      "technologies": [
+        {
+          "id": 1,
+          "item": "JavaScript"
+        },
+        {
+          "id": 2,
+          "item": "React"
+        },
+        {
+          "id": 3,
+          "item": "Express.js"
+        },
+        {
+          "id": 3,
+          "item": "Python"
+        },
+        {
+          "id": 4,
+          "item": "Selenium"
+        },
+        {
+          "id": 5,
+          "item": "Material UI"
+        }
+      ]
     },
     {
       "id": 1,
       "company": "Upwards (formerly WeeCare)",
-      "title": "Junior Software Engineer",
+      "title": "Jr. Software Engineer",
       "period": "Decemeber 2020 - November 2023",
-      "description": "Developed and delivered robust production code for a wide array of projects, including both frontend clients and backend services. Collaborated with designers and other engineers to ensure thoughtful and consistent user experiences for Upwards' apps.",
+      "description": "Delivered full-stack solutions by developing and optimizing API endpoints to support evolving business needs and service-oriented architectures. Enhanced web features and improved code maintainability by migrating over 40% of the React codebase from JavaScript to TypeScript. Extracted data from JSON objects via API calls, generating over 150,000 leads and contributing to more than 30% of the company's revenue. Strengthened application reliability by implementing comprehensive unit, integration, and user acceptance tests using Selenium, Jest, and PHPUnit. Created and maintained documentation on engineering best practices to facilitate effective knowledge sharing across teams.",
       "technologies": [
         {
           "id": 1,
@@ -65,7 +91,7 @@
       "company": "Flutterkik - Full-Stack Application",
       "title": "Projects",
       "period": "March 2024 - Present",
-      "description": "Independently built a web application that allows users to create personalized swim workouts and track USA swimming event standards. Front and back-end development using React and Node.js/Express.js respectively and utilizing AWS RDS host a MySQL database. Utilized JWT and cookies to implement user authentication and authorization best practices. Beta users can register using the key - Beta123",
+      "description": "Independently designed and developed a full-stack web application that empowers users to create personalized swim workouts and track USA Swimming event standards. Built a dynamic React front end with a responsive UI, while developing a robust backend using Node.js and Express.js to handle API requests and business logic. Integrated a MySQL database hosted on AWS RDS for scalable data management. Implemented secure authentication and authorization using JWT and cookies, ensuring data protection and user access control. Optimized performance and maintainability by following best practices in full-stack development.",
       "link": "flutterkik.com",
       "technologies": [
         {
@@ -78,7 +104,7 @@
         },
         {
           "id": 2,
-          "item": "Express"
+          "item": "Express.js"
         },
         {
           "id": 3,

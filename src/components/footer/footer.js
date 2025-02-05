@@ -7,7 +7,7 @@ import logo from "../../assets/images/JT.png";
 import logoWhite from "../../assets/images/JT-white.png";
 import resume from "../../assets/images/resume.png";
 import resumeWhite from "../../assets/images/resume-white.png";
-import resumePdf from "../../assets/files/JonathanTorresResume.pdf";
+import resumePdf from "../../assets/files/Jonathan_Torres_Resume.pdf";
 import "./footer.scss";
 import { NavLink } from "react-router-dom";
 import useDarkModeStore from "../../stores/darkModeStore";
