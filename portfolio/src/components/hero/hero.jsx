@@ -9,10 +9,21 @@ export default function Hero() {
         <h2 className={`${styles.subheader}`}>
           Software Engineer | Full Stack Developer
         </h2>
+        <p className={`${styles.description}`}>
+          Software engineer with full stack capabilities, experienced in
+          developing scalable applications and intuitive user interfaces. I
+          focus on writing maintainable code, improving performance, and
+          delivering a clear and reliable user experience.
+        </p>
         <ul className={`${styles.navList}`}>
           <li className={`${styles.navListItem}`}>
             <a className={`${styles.navListLink}`} href="/about">
               About
+            </a>
+          </li>
+          <li className={`${styles.navListItem}`}>
+            <a className={`${styles.navListLink}`} href="/skills">
+              Skills
             </a>
           </li>
           <li className={`${styles.navListItem}`}>
@@ -22,7 +33,7 @@ export default function Hero() {
           </li>
         </ul>
       </div>
-      <div className={`${styles.imageContainer}`}></div>
+      <div className={`${styles.imageContainer}`}>test</div>
     </div>
   );
 }
