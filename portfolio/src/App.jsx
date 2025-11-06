@@ -5,6 +5,8 @@ import Navbar from "./components/navbar/navbar";
 import Hero from "./components/hero/hero";
 import Aurora from "./components/backgorunds/aurora";
 import About from "./pages/about";
+import Skills from "./pages/skills";
+import Experience from "./pages/experience";
 
 function App() {
   return (
@@ -19,6 +21,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Hero />} />
         <Route path="/about" element={<About />} />
+        <Route path="/experience" element={<Experience />} />
+        <Route path="/skills" element={<Skills />} />
       </Routes>
     </>
   );

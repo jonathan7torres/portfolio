@@ -1,8 +1,12 @@
 import styles from "./styles.module.scss";
+import logo from "../../assets/jt_logo.png";
 
 export default function Navbar() {
   return (
     <div className={`${styles.container}`}>
+      <a className={`${styles.logoContainer}`} href="/">
+        <img className={`${styles.logo}`} src={logo} alt="logo" />
+      </a>
       <div className={`${styles.linksContainer}`}>
         <a
           className={`${styles.link}`}
