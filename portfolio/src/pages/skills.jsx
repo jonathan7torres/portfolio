@@ -5,6 +5,10 @@ const imageLogos = [
     node: <i className="devicon-react-original colored"></i>,
     title: "React",
   },
+  {
+    node: <i class="devicon-vitejs-plain colored"></i>,
+    title: "Vite",
+  },
 ];
 
 export default function Skills() {
@@ -20,7 +24,7 @@ export default function Skills() {
         pauseOnHover
         scaleOnHover
         // fadeOut
-        fadeOutColor="#ffffff"
+        // fadeOutColor="#ffffff"
         ariaLabel="Technology partners"
       />
     </div>

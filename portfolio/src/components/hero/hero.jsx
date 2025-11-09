@@ -21,11 +21,11 @@ export default function Hero() {
               About
             </a>
           </li>
-          <li className={`${styles.navListItem}`}>
+          {/* <li className={`${styles.navListItem}`}>
             <a className={`${styles.navListLink}`} href="/skills">
               Skills
             </a>
-          </li>
+          </li> */}
           <li className={`${styles.navListItem}`}>
             <a className={`${styles.navListLink}`} href="/experience">
               Experience
