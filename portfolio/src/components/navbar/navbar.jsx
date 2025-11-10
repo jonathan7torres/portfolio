@@ -13,7 +13,7 @@ export default function Navbar() {
           href="mailto:jon7torres@gmail.com"
           target="_blank"
         >
-          Contact Me
+          Contact me
         </a>
         <a
           className={`${styles.link}`}

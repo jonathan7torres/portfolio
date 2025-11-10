@@ -5,16 +5,24 @@ import HorizontalLine from "../../components/lines/straight/straight";
 
 const kpffLogos = [
   {
-    node: <i className="devicon-react-original colored"></i>,
-    title: "React",
-  },
-  {
     node: <i class="devicon-vitejs-plain colored"></i>,
     title: "Vite",
   },
   {
+    node: <i className="devicon-react-original colored"></i>,
+    title: "React",
+  },
+  {
     node: <i class="devicon-express-original"></i>,
     title: "Express",
+  },
+  {
+    node: <i class="devicon-javascript-plain colored"></i>,
+    title: "JavaScript",
+  },
+  {
+    node: <i class="devicon-html5-plain colored"></i>,
+    title: "HTML",
   },
   {
     node: <i class="devicon-sass-original colored"></i>,
@@ -40,6 +48,10 @@ const upwardsLogos = [
     title: "PHP",
   },
   {
+    node: <i class="devicon-mysql-original colored"></i>,
+    title: "MySQL",
+  },
+  {
     node: <i class="devicon-puppeteer-plain colored"></i>,
     title: "Puppeteer",
   },
@@ -58,6 +70,14 @@ const upwardsLogos = [
   {
     node: <i class="devicon-jest-plain colored"></i>,
     title: "Jest",
+  },
+  {
+    node: <i class="devicon-postman-plain colored"></i>,
+    title: "Postman",
+  },
+  {
+    node: <i class="devicon-sentry-original"></i>,
+    title: "Sentry",
   },
 ];
 
@@ -116,9 +136,7 @@ export default function Experience() {
         transition={{ duration: 1, ease: "easeOut", delay: 0.8 }}
         className={`${style.section}`}
       >
-        <h3 className={`${style.sectionTitle}`}>
-          Jr Software Engineer (offiical title: Jr System Administrator)
-        </h3>
+        <h3 className={`${style.sectionTitle}`}>Jr Software Engineer</h3>
         <div className={`${style.linesContainer}`}>
           <HorizontalLine
             width={"60%"}
@@ -159,6 +177,11 @@ export default function Experience() {
           ariaLabel="Technology partners"
         />
       </motion.section>
+      <div className={`${style.linkContainer}`}>
+        <a className={`${style.link}`} href="/">
+          {`<< Back`}
+        </a>
+      </div>
     </div>
   );
 }
