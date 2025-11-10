@@ -1,10 +1,17 @@
 import Aurora from "../backgorunds/aurora";
 import styles from "./styles.module.scss";
+import me from "../../assets/me.jpeg";
+import { motion } from "motion/react";
 
 export default function Hero() {
   return (
     <div className={styles.container}>
-      <div className={`${styles.textContainer}`}>
+      <motion.div
+        initial={{ opacity: 0, y: 40 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
+        className={`${styles.textContainer}`}
+      >
         <h1 className={`${styles.header}`}>Jonathan Torres</h1>
         <h2 className={`${styles.subheader}`}>
           Software Engineer | Full Stack Developer
@@ -21,19 +28,23 @@ export default function Hero() {
               About
             </a>
           </li>
-          {/* <li className={`${styles.navListItem}`}>
-            <a className={`${styles.navListLink}`} href="/skills">
-              Skills
-            </a>
-          </li> */}
           <li className={`${styles.navListItem}`}>
             <a className={`${styles.navListLink}`} href="/experience">
               Experience
             </a>
           </li>
         </ul>
+      </motion.div>
+      <div className={`${styles.imageContainer}`}>
+        <motion.div
+          initial={{ scale: 0 }}
+          animate={{ scale: 1 }}
+          transition={{ duration: 0.3, delay: 0.6 }}
+          className={`${styles.imageController}`}
+        >
+          <img className={`${styles.image}`} src={me} alt="me" />
+        </motion.div>
       </div>
-      <div className={`${styles.imageContainer}`}>test</div>
     </div>
   );
 }

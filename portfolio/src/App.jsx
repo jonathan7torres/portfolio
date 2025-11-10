@@ -1,8 +1,5 @@
-// import { useState } from "react";
 import "./App.css";
-import { Routes, Route, Link } from "react-router-dom";
-import "devicon/devicon.min.css";
-import "devicon/devicon-base.css";
+import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/navbar/navbar";
 import Hero from "./components/hero/hero";
 import Aurora from "./components/backgorunds/aurora";
