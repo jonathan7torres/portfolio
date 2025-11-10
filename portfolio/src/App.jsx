@@ -3,7 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/navbar/navbar";
 import Hero from "./components/hero/hero";
 import Aurora from "./components/backgorunds/aurora";
-import About from "./pages/about";
+import About from "./pages/about/about";
 import Skills from "./pages/skills";
 import Experience from "./pages/experience/experience";
 

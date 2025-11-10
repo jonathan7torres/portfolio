@@ -1,7 +1,7 @@
-import Aurora from "../backgorunds/aurora";
 import styles from "./styles.module.scss";
 import me from "../../assets/me.jpeg";
 import { motion } from "motion/react";
+import HorizontalLine from "../lines/straight/straight";
 
 export default function Hero() {
   return (
@@ -34,16 +34,41 @@ export default function Hero() {
             </a>
           </li>
         </ul>
+        <div className={`${styles.linesContainer}`}>
+          <HorizontalLine
+            width={42}
+            stroke="#00FF99"
+            strokeWidth={2}
+            duration={2}
+            delay={1}
+          />
+          <HorizontalLine
+            width={70}
+            stroke="#00FF99"
+            strokeWidth={2}
+            duration={2}
+            delay={2}
+          />
+        </div>
       </motion.div>
       <div className={`${styles.imageContainer}`}>
         <motion.div
           initial={{ scale: 0 }}
           animate={{ scale: 1 }}
-          transition={{ duration: 0.3, delay: 0.6 }}
+          transition={{ duration: 0.5, delay: 0.6 }}
           className={`${styles.imageController}`}
         >
           <img className={`${styles.image}`} src={me} alt="me" />
         </motion.div>
+        <div className={`${styles.imageLineContainer}`}>
+          <HorizontalLine
+            width={200}
+            stroke="#00FF99"
+            strokeWidth={3}
+            duration={2}
+            delay={3}
+          />
+        </div>
       </div>
     </div>
   );

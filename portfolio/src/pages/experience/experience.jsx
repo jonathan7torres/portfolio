@@ -1,5 +1,7 @@
 import style from "./styles.module.scss";
+import { motion } from "motion/react";
 import LogoLoop from "../../components/loops/logoLoop/logoLoop";
+import HorizontalLine from "../../components/lines/straight/straight";
 
 const kpffLogos = [
   {
@@ -63,10 +65,24 @@ export default function Experience() {
   return (
     <div className={`${style.container}`}>
       <h2 className={`${style.title}`}>Experience</h2>
-      <section className={`${style.section}`}>
+      <motion.section
+        initial={{ opacity: 0, y: 40 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1, ease: "easeOut", delay: 0.2 }}
+        className={`${style.section}`}
+      >
         <h3 className={`${style.sectionTitle}`}>
           Software Engineer (offiical title: Jr System Administrator)
         </h3>
+        <div className={`${style.linesContainer}`}>
+          <HorizontalLine
+            width={`70%`}
+            stroke="#00FF99"
+            strokeWidth={2}
+            duration={2}
+            delay={1}
+          />
+        </div>
         <h5 className={`${style.company}`}>
           KPFF Consulting Engineers | May 2024 - Present
         </h5>
@@ -93,11 +109,26 @@ export default function Experience() {
           fadeOutColor="#30363d"
           ariaLabel="Technology partners"
         />
-      </section>
-      <section className={`${style.section}`}>
+      </motion.section>
+      <motion.section
+        initial={{ opacity: 0, y: 40 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1, ease: "easeOut", delay: 0.8 }}
+        className={`${style.section}`}
+      >
         <h3 className={`${style.sectionTitle}`}>
           Jr Software Engineer (offiical title: Jr System Administrator)
         </h3>
+        <div className={`${style.linesContainer}`}>
+          <HorizontalLine
+            width={"60%"}
+            stroke="#00FF99"
+            strokeWidth={2}
+            duration={2}
+            delay={2}
+          />
+        </div>
+
         <h5 className={`${style.company}`}>
           Upwards (formerly WeeCare) | December 2020 - November 2023
         </h5>
@@ -127,7 +158,7 @@ export default function Experience() {
           fadeOutColor="#30363d"
           ariaLabel="Technology partners"
         />
-      </section>
+      </motion.section>
     </div>
   );
 }

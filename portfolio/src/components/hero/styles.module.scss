@@ -2,7 +2,7 @@
   width: 80%;
   min-height: 80vh;
   display: flex;
-  margin: auto;
+  margin: auto auto 100px auto;
   position: absolute;
   top: 100px;
   left: 50%;
@@ -51,6 +51,15 @@
   text-decoration: none;
   color: whitesmoke;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.linesContainer {
+  display: flex;
+  gap: 20px;
+}
+
+.imageLineContainer {
+  margin: auto;
 }
 
 .imageController {
