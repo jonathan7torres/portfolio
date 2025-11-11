@@ -122,7 +122,7 @@ export default function Experience() {
           speed={20}
           direction="left"
           logoHeight={30}
-          gap={20}
+          gap={40}
           pauseOnHover
           scaleOnHover
           fadeOut
@@ -169,7 +169,7 @@ export default function Experience() {
           speed={20}
           direction="left"
           logoHeight={30}
-          gap={20}
+          gap={40}
           pauseOnHover
           scaleOnHover
           fadeOut

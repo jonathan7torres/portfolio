@@ -66,7 +66,7 @@ export default function Hero() {
             stroke="#00FF99"
             strokeWidth={3}
             duration={2}
-            delay={3}
+            delay={3.5}
           />
         </div>
       </div>
