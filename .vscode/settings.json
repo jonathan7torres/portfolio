@@ -1,5 +1,0 @@
-{
-    "editor.formatOnSave": true,
-    "editor.cursorStyle": "line",
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-}

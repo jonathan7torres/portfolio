@@ -1,0 +1,96 @@
+.container {
+  width: 80%;
+  min-height: 80vh;
+  display: flex;
+  margin: auto auto 100px auto;
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.textContainer {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.header,
+.subheader {
+  margin-bottom: 0;
+  color: whitesmoke;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.imageContainer {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.description {
+  color: whitesmoke;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 18px;
+  margin-right: 20px;
+}
+
+.navList {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding-left: 0;
+}
+
+.navListItem {
+}
+
+.navListLink {
+  text-decoration: none;
+  color: whitesmoke;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.linesContainer {
+  display: flex;
+  gap: 20px;
+}
+
+.imageLineContainer {
+  margin: auto;
+}
+
+.imageController {
+  height: 300px;
+  width: 300px;
+  margin: auto;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* fill the square, preserving aspect */
+  display: block;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 850px) {
+  .imageController {
+    height: 200px;
+    width: 200px;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .container {
+    flex-direction: column-reverse;
+  }
+
+  .textContainer, .imageContainer {
+    width: 100%;
+    margin: 20px auto 20px auto;
+  }
+}
