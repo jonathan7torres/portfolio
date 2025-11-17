@@ -9,8 +9,8 @@ import "@fontsource/poppins";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename="/portfolio/">
       <App />
-    </BrowserRouter>{" "}
+    </BrowserRouter>
   </StrictMode>
 );

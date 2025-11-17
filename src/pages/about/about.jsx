@@ -2,6 +2,7 @@ import style from "./styles.module.scss";
 import { motion } from "motion/react";
 import HorizontalLine from "../../components/lines/straight/straight";
 import me from "../../assets/me_bike.jpeg";
+import { Link } from "react-router-dom";
 
 export default function About() {
   return (
@@ -45,9 +46,9 @@ export default function About() {
         taught me a lot along the way.
       </motion.p>
       <div className={`${style.linkContainer}`}>
-        <a className={`${style.link}`} href="/">
+        <Link className={`${style.link}`} to="/">
           {`<< Back`}
-        </a>
+        </Link>
       </div>
     </div>
   );

@@ -2,6 +2,7 @@ import styles from "./styles.module.scss";
 import me from "../../assets/me.jpeg";
 import { motion } from "motion/react";
 import HorizontalLine from "../lines/straight/straight";
+import { Link } from "react-router-dom";
 
 export default function Hero() {
   return (
@@ -24,14 +25,14 @@ export default function Hero() {
         </p>
         <ul className={`${styles.navList}`}>
           <li className={`${styles.navListItem}`}>
-            <a className={`${styles.navListLink}`} href="/about">
+            <Link className={`${styles.navListLink}`} to="/about">
               About
-            </a>
+            </Link>
           </li>
           <li className={`${styles.navListItem}`}>
-            <a className={`${styles.navListLink}`} href="/experience">
+            <Link className={`${styles.navListLink}`} to="/experience">
               Experience
-            </a>
+            </Link>
           </li>
         </ul>
         <div className={`${styles.linesContainer}`}>

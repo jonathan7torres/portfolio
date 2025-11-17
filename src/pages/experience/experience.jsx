@@ -2,6 +2,7 @@ import style from "./styles.module.scss";
 import { motion } from "motion/react";
 import LogoLoop from "../../components/loops/logoLoop/logoLoop";
 import HorizontalLine from "../../components/lines/straight/straight";
+import { Link } from "react-router-dom";
 
 const kpffLogos = [
   {
@@ -107,15 +108,14 @@ export default function Experience() {
           KPFF Consulting Engineers | May 2024 - Present
         </h5>
         <p className={`${style.description}`}>
-          I design and build full-stack applications using technologies like
-          Vite, React, Express.js, and Framer Motion, with an emphasis on
-          responsive interfaces and smooth user interactions. I develop and
-          optimize scalable backend APIs to ensure reliable client-server
-          communication and data flow. I also create automation tools using
-          Puppeteer to streamline repetitive user workflows and improve
-          operational efficiency. I continually research and integrate new tools
-          and techniques across the stack to improve performance,
-          maintainability, and development speed.
+          Designed and built full-stack applications using Vite, React,
+          Express.js, and Framer Motion, focusing on responsive interfaces and
+          smooth user interactions. Developed and optimized scalable backend
+          APIs to ensure reliable client-server communication and efficient data
+          flow. Created automation tools with Puppeteer to streamline repetitive
+          workflows and improve operational efficiency. Continuously researched
+          and integrated new tools and techniques across the stack to enhance
+          performance, maintainability, and development speed.
         </p>
         <LogoLoop
           logos={kpffLogos}
@@ -151,18 +151,17 @@ export default function Experience() {
           Upwards (formerly WeeCare) | December 2020 - November 2023
         </h5>
         <p className={`${style.description}`}>
-          I designed and maintained scalable API endpoints in PHP to support
-          platform growth and backend performance. On the frontend, I
-          contributed new features and refactored a significant portion of the
-          React codebase to TypeScript, improving code stability and developer
-          productivity. I reverse engineered complex API interactions to process
-          more than 150,000 records, enabling key data flows that directly
-          supported a substantial portion of company revenue. Additionally, I
-          handled QA responsibilities by building and running unit, integration,
-          and UAT tests using Selenium, Jest, and PHPUnit to ensure reliability
-          before deployment. I also documented development workflows and best
-          practices to help standardize processes and improve collaboration
-          across teams.
+          Developed and maintained scalable API endpoints in PHP to support
+          platform growth and backend performance. Contributed to frontend
+          features and refactored a significant portion of the React codebase to
+          TypeScript, improving code stability and developer productivity.
+          Reverse engineered complex API interactions to process more than
+          150,000 records, enabling critical data flows that supported a
+          substantial portion of company revenue. Managed QA processes by
+          building and running unit, integration, and UAT tests with Selenium,
+          Jest, and PHPUnit to ensure reliability prior to deployment.
+          Documented development workflows and best practices to standardize
+          processes and strengthen collaboration across teams.
         </p>
         <LogoLoop
           logos={upwardsLogos}
@@ -178,9 +177,9 @@ export default function Experience() {
         />
       </motion.section>
       <div className={`${style.linkContainer}`}>
-        <a className={`${style.link}`} href="/">
+        <Link className={`${style.link}`} to="/">
           {`<< Back`}
-        </a>
+        </Link>
       </div>
     </div>
   );
